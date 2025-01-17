@@ -1,6 +1,6 @@
-site_name: ASU-EGR314-2025-S-305 Team Organization
-site_url: https://ASU-EGR314-2025-S-305.github.io
-repo_url: https://github.com/ASU-EGR314-2025-S-305/ASU-EGR314-2025-S-305.github.io
+site_name: EGR314 Report Template
+site_url: https://embedded-systems-design.github.io/template_report
+repo_url: https://github.com/embedded-systems-design/template_report
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -25,7 +25,7 @@ theme:
     - navigation.footer
 
 markdown_extensions:
-  - attr_list
+  - attr_list # add attributes using curly brackets to images
   - md_in_html
   - footnotes
   - pymdownx.arithmatex:
@@ -44,7 +44,7 @@ draft_docs: |
 
 plugins:
   - search
-  - glightbox
+  - glightbox # enable resizing images
 
 extra_css:
   - stylesheets/extra.css  
@@ -56,11 +56,11 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2024 ASU-EGR314-2025-S-305 Team"
+copyright: "Copyright &copy; 2024 team-name-here"
 
 extra:
   generator: false
   social:
     - icon: fontawesome/regular/file-code
-      link: /2024_fall
-      name: 2024 Site
+      link: /2023_fall
+      name: 2023 Site
