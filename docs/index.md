@@ -55,19 +55,26 @@ Our mission is to design an engaging, innovative STEM-themed system for K-12 stu
 
 1. **Educational and Interactive Design:** Develop a hands-on system that allows K-12 students to explore STEM concepts through active engagement and interaction. The project will incorporate real-world applications of engineering and science to provide meaningful learning experiences.
 
-2. **Seamless Modular Integration:** The system will feature individual subsystems, including sensor, actuator, HMI, and communication modules, that connect effortlessly via standardized UART daisy chain communication. Modularity will ensure ease of expansion, troubleshooting, and future improvements.
 
-3. **Innovative and User-Friendly Interface:** A Human-Machine Interface (HMI) with push buttons and an OLED screen will be implemented to provide an intuitive and engaging user experience. This interface will support real-time data visualization and system control for effective interaction.
+3. **Seamless Modular Integration:** The system will feature individual subsystems, including sensor, actuator, HMI, and communication modules, that connect effortlessly via standardized UART daisy chain communication. Modularity will ensure ease of expansion, troubleshooting, and future improvements.
 
-4. **Robust Communication and Connectivity:** The system will utilize reliable UART communication to ensure smooth and efficient data exchange between subsystems. Additionally, it will integrate MQTT or equivalent IoT functionality to enable bidirectional internet communication and remote monitoring or control.
 
-5. **Professional and High-Quality Design:** The project will adhere to industry-standard practices in circuit design, component selection, and software development to ensure reliability and scalability. Surface-mount technology will be employed for professional-grade PCB fabrication while meeting project specifications.
+5. **Innovative and User-Friendly Interface:** A Human-Machine Interface (HMI) with push buttons and an OLED screen will be implemented to provide an intuitive and engaging user experience. This interface will support real-time data visualization and system control for effective interaction.
 
-6. **STEM Engagement and Outreach:** The project aims to inspire young learners to pursue STEM careers by creating a tool that meets course requirements and serves as an engaging educational resource. Creative and interactive features will make complex concepts accessible to a non-technical audience.
 
-7. **Technical Growth and Career Development:** Team members will gain hands-on experience in PCB design, microcontroller programming, and system integration. The project will also enhance engineering portfolios by showcasing innovative designs and thorough documentation, ultimately improving career readiness.
+7. **Robust Communication and Connectivity:** The system will utilize reliable UART communication to ensure smooth and efficient data exchange between subsystems. Additionally, it will integrate MQTT or equivalent IoT functionality to enable bidirectional internet communication and remote monitoring or control.
 
-8. **Sustainability and Future Proofing:** The system will be designed to support easy updates, enhancements, and potential reuse for future projects or applications. Where possible, eco-friendly components and design strategies will be utilized to ensure sustainability.
+
+9. **Professional and High-Quality Design:** The project will adhere to industry-standard practices in circuit design, component selection, and software development to ensure reliability and scalability. Surface-mount technology will be employed for professional-grade PCB fabrication while meeting project specifications.
+
+
+11. **STEM Engagement and Outreach:** The project aims to inspire young learners to pursue STEM careers by creating a tool that meets course requirements and serves as an engaging educational resource. Creative and interactive features will make complex concepts accessible to a non-technical audience.
+
+
+13. **Technical Growth and Career Development:** Team members will gain hands-on experience in PCB design, microcontroller programming, and system integration. The project will also enhance engineering portfolios by showcasing innovative designs and thorough documentation, ultimately improving career readiness.
+
+
+15. **Sustainability and Future Proofing:** The system will be designed to support easy updates, enhancements, and potential reuse for future projects or applications. Where possible, eco-friendly components and design strategies will be utilized to ensure sustainability.
 
 
 ### **How We Developed This Mission:**
