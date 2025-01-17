@@ -1,90 +1,118 @@
 ---
 title: Welcome
 tags:
-- tag1
-- tag2
+- EGR314
+- Team 305
 ---
 
-## Et poposcerat rursus ad magnus premit
+## Welcome to ASU-EGR314-2025-S-305 Team Page
 
-Lorem markdownum gradus, qui largis, nec pater pleno: fatum. Adspexit cursus
-cur, aut in adhuc crimina **habebat**: pro.
+### Team Members:
+- **Agilan Kumar**
+- **Andrew Rushton**
+- **David Diaz**
+- **Zachary Romero**
 
-- Et ducimus
-- Prosecta hinc nix vidi rettulit cum sitim
-- Has in tonitribus tenebrae Romane mirantum resupina
-- Figuras et dextram
+---
 
-## Esse quoque sedem plena nunc iecur
+## Team Charter
 
-Possemque suos dumque. Deum recta rogantem, inquinat facta gigantas; ego nisi
-mea. Nec tamen quae gravem, potens, [cognoscendo
-scripta](http://vidit-lumine.io/sinusdeum). *Nihil ventis Aeneae* probat.
+**Team Goals:**
+1. Collaborate effectively to develop a modular and functional system for the course project.
+2. Ensure compliance with UART daisy chain communication protocols.
+3. Promote learning and growth in PCB design, microcontroller programming, and modular integration.
+4. Deliver an interactive STEM-themed display for K-12 students.
+5. Present a professional and innovative project during the Innovation Showcase.
 
-1. listum primo
+---
 
-    discusso el codex:
+## Product Mission Statement
 
-        if (pimProgressiveMashup(recursive_upnp_barcraft, seo) == file.station_leaf(
-                optical + 1, compact_docking)) {
-            rt_programming_system(udpScraping, marketRegularMetal,
-                    threadingNuiRoom);
-            vlogVaporwarePage += 5 + xhtmlDiskReader;
-            access.kbps_footer.dialogZettabyte(3, cloud_midi_spoofing, ipad_macro);
-        }
-        if (maskProcessorKbps(programming, user, cache_web) >= file *
-                publishingDual) {
-            hibernate.flash_network -= 4;
-            bar = goodput_flash;
-            streaming = voip_flatbed - 1;
-        } else {
-            clipCd(jquery, 55 - -1, touchscreen);
-            plagiarism_command_e = cleanHardIcio;
-            recursion = checksum;
-        }
-        clock(roomCaptcha, 2);
+Our mission is to design an engaging STEM-themed system for K-12 students, demonstrating scientific and engineering concepts interactively. By focusing on modularity, interactivity, and robust communication, we aim to inspire curiosity and excitement for STEM education.
 
-2. listum secundum
+### Objectives:
+- Create an educational and interactive hands-on experience.
+- Integrate modular subsystems (sensor, actuator, HMI, communication) seamlessly.
+- Implement a user-friendly Human-Machine Interface (HMI).
+- Ensure reliable UART communication and MQTT connectivity for IoT functionality.
 
-    > warningum alertum
+---
 
-3. listum adnauseum
+## Roles and Responsibilities
 
-## Pondus ante Ialysios vultu exasperat loqui sanguine
+| Role                  | Responsibility                                                                          |
+|-----------------------|------------------------------------------------------------------------------------------|
+| **Meeting Leader**    | Schedule and facilitate team meetings, ensure agenda is followed.                       |
+| **Meeting Recorder**  | Document meeting minutes, attendance, and action items.                                 |
+| **Assignment Leader** | Oversee assignment progress and ensure timely submission to Canvas.                     |
+| **Project Monitor**   | Track project progress, provide reminders for deadlines, and maintain accountability.    |
 
-Iacere non, quis nimbis. Dumque tibi minora clamabat contigit vacant, sepulcro
-coniugis quae; mihi! Solent adeste faventibus, perque penates, currere in quater
-Odrysius ferro, vota, vero mittat crinibus, quae. Hanc mundi, ipse vultu voce
-sub quae heros forsitan imagine in tecum Cephalus? Formosissimus vela; vapore
-oris, aera, utendum ostendisse regnum Centaurorum elice.
+Roles will rotate bi-weekly to ensure equal participation and learning opportunities.
 
-    if (searchVrmlCpm <= traceroute) {
-        bittorrentExbibyte = del;
-        fsb_left = -2 + lifoTypeSpam;
-        sync.bcc(errorAtm(66, boot, link), meta_personal_hdd, leak.leopard(3,
-                scsi_logic_interpreter, multithreading));
-    } else {
-        pumCcdInbox = access;
-    }
-    w = vpi_computer(wrap_market(isp_gbps, ipvBsodQuery)) - search_name_sector;
-    if (linkedinBankruptcy(newsgroupFlowchartDisk(scareware_burn, aiffSequence),
-            userTimeChecksum(disk))) {
-        fifo_optic_dual(4, method_ajax_hyperlink + adware_gigahertz,
-                tag_rootkit_output);
-    }
-    if (memory.fsb(client_template, typeface_memory_bridge) < newbie_socket_gif(
-            storageModemDrive, kilohertz_yottabyte_middleware)) {
-        dimm.dvd_character.hover(hibernate);
-        exif = unmountVirusRss * 5;
-    } else {
-        localhost_adapter += character_olap_white;
-        subnet(internal_dongle + card);
-    }
-    var hibernateAlert = formatCmsCompression(1 / and_tcp + 5);
+---
 
-Miserande evanida amanti, succiduo, dare mihi quid amnis venit Rhadamanthus.
-Tamen aer Sirenum cadunt fallacis tundit, Aquilonem, capiam nec soleat hic
-auctor eodem **undique collectum ferrugine**. Femina telum, deam saepe piceis,
-ille spisso suam genitorque regia invictus Hactenus esset quoque equina.
-Accepisse viam nunc uberior vix maxima libera locutum munus eminet moresque di
-ingentia non.
+## Communication Procedures
+
+- **Primary Communication Channels:**
+  - Group text or Discord for quick updates.
+  - Email for formal documentation and sharing files.
+- **Meeting Schedule:**
+  - Weekly meetings on Fridays, 4:00 PM - 6:00 PM.
+  - Additional meetings scheduled as needed.
+
+---
+
+## Conflict Resolution
+
+1. Address disagreements promptly and respectfully.
+2. Escalate unresolved conflicts to the instructor for mediation.
+3. Foster a constructive and supportive team environment.
+
+---
+
+## Project Overview and Subsystems
+
+### Team Project Description
+The team project aims to design a STEM-themed interactive display system for K-12 students. It will consist of the following modular subsystems:
+1. **Sensor Subsystem:** Includes a sensor that communicates via I2C or SPI.
+2. **Actuator Subsystem:** Includes an actuator for bidirectional control and response.
+3. **HMI Subsystem:** Implements push buttons and an OLED screen for user interaction.
+4. **Communication Subsystem:** Ensures reliable UART communication and MQTT-based IoT connectivity.
+
+### Individual Contributions:
+- Each teammate will design and build their subsystem, including:
+  - Block diagram, schematic, and PCB layout.
+  - Software and API for UART communication.
+  - Datasheet with detailed documentation.
+
+---
+
+## Appendix
+
+### Supporting Notes:
+- Team members will rotate roles bi-weekly to share responsibilities.
+- Additional communication channels (Slack, Zoom) will be used if needed.
+- Unused team notes or steps will be archived here for future reference.
+
+### Links to Individual Datasheets:
+- [Agilan Kumar's Datasheet](#)
+- [Andrew Rushton's Datasheet](#)
+- [David Diaz's Datasheet](#)
+- [Zachary Romero's Datasheet](#)
+
+---
+
+## Contact Information
+
+| Name          | Primary Communication Method | Secondary Communication Method |
+|---------------|-------------------------------|--------------------------------|
+| Agilan Kumar  | Discord                       | Email                         |
+| Andrew Rushton| Discord                       | Email                         |
+| David Diaz    | Discord                       | Email                         |
+| Zachary Romero| Discord                       | Email                         |
+
+---
+
+## Conclusion
+
+We are excited to work as a team to create an innovative and impactful STEM-themed project for the EGR314 Innovation Showcase. With a strong focus on modularity, collaboration, and professionalism, we aim to deliver a project that exceeds expectations and inspires future STEM learners.
