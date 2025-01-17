@@ -60,6 +60,15 @@ Roles will rotate bi-weekly to ensure equal participation and learning opportuni
   - Weekly meetings on Fridays, 4:00 PM - 6:00 PM.
   - Additional meetings scheduled as needed.
 
+### Contact Information:
+
+| Name          | Primary Communication Method | Secondary Communication Method | Phone Number   |
+|---------------|-------------------------------|--------------------------------|----------------|
+| Agilan Kumar  | Discord                       | Email                         | (XXX) XXX-XXXX |
+| Andrew Rushton| Discord                       | Email                         | (XXX) XXX-XXXX |
+| David Diaz    | Discord                       | Email                         | (928) 276-0266 |
+| Zachary Romero| Discord                       | Email                         | (XXX) XXX-XXXX |
+
 ---
 
 ## Conflict Resolution
@@ -102,17 +111,6 @@ The team project aims to design a STEM-themed interactive display system for K-1
 
 ---
 
-## Contact Information
-
-| Name          | Primary Communication Method | Secondary Communication Method |
-|---------------|-------------------------------|--------------------------------|
-| Agilan Kumar  | Discord                       | Email                         |
-| Andrew Rushton| Discord                       | Email                         |
-| David Diaz    | Discord                       | Email                         |
-| Zachary Romero| Discord                       | Email                         |
-
----
-
 ## Conclusion
 
-We are thrilled to collaborate as a team to develop an innovative and impactful STEM-themed project for the EGR314 Innovation Showcase. With a commitment to modularity, creativity, and excellence, we aim to deliver a project that not only exceeds expectations but also inspires and engages future generations of STEM learners.
+We are excited to work as a team to create an innovative and impactful STEM-themed project for the EGR314 Innovation Showcase. With a strong focus on modularity, collaboration, and professionalism, we aim to deliver a project that exceeds expectations and inspires future STEM learners.
