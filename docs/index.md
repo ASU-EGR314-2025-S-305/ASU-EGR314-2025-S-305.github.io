@@ -115,4 +115,4 @@ The team project aims to design a STEM-themed interactive display system for K-1
 
 ## Conclusion
 
-We are excited to work as a team to create an innovative and impactful STEM-themed project for the EGR314 Innovation Showcase. With a strong focus on modularity, collaboration, and professionalism, we aim to deliver a project that exceeds expectations and inspires future STEM learners.
+We are thrilled to collaborate as a team to develop an innovative and impactful STEM-themed project for the EGR314 Innovation Showcase. With a commitment to modularity, creativity, and excellence, we aim to deliver a project that not only exceeds expectations but also inspires and engages future generations of STEM learners.
