@@ -19,16 +19,16 @@ tags:
 
 **Team Goals:**
 
+   
+1. Ensure compliance with UART daisy chain communication protocols.
+   
+2. Promote learning and growth in PCB design, microcontroller programming, and modular integration.
+   
+3. Deliver an interactive STEM-themed display for K-12 students.
+   
+4. Present a professional and innovative project during the Innovation Showcase.
 
-1. Collaborate effectively to develop a modular and functional system for the course project.
-   
-2. Ensure compliance with UART daisy chain communication protocols.
-   
-3. Promote learning and growth in PCB design, microcontroller programming, and modular integration.
-   
-4. Deliver an interactive STEM-themed display for K-12 students.
-   
-5. Present a professional and innovative project during the Innovation Showcase.
+5. Collaborate effectively to develop a modular and functional system for the course project.
 
 ---
 
