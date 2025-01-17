@@ -18,6 +18,7 @@ tags:
 ## Team Charter
 
 **Team Goals:**
+
 1. Collaborate effectively to develop a modular and functional system for the course project.
    
 2. Ensure compliance with UART daisy chain communication protocols.
