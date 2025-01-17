@@ -15,6 +15,11 @@ tags:
 
 ---
 
+## **Introduction**
+
+Our team is dedicated to creating an innovative and impactful STEM-themed project that demonstrates technical skills, teamwork, and creativity while contributing to the development of interactive educational tools for K-12 students. By focusing on modularity, interactivity, and industry-standard practices, we aim to deliver a high-quality system that inspires curiosity and excitement for STEM concepts. Through collaborative effort and individual contributions, we seek to design, build, and document a professional-grade modular system that adheres to UART daisy chain communication protocols and supports future scalability. This report outlines our team’s charter, goals, objectives, communication strategies, and responsibilities, all of which are aligned to ensure the success of our project and the professional growth of our team members. By fostering a positive and productive team environment, we strive to achieve excellence in both the technical and educational aspects of our project.
+
+
 ## Team Charter
 
 **Team Goals:**
@@ -104,14 +109,15 @@ Roles will rotate bi-weekly to ensure equal participation and learning opportuni
   - Weekly meetings on Fridays, 4:00 PM - 6:00 PM.
   - Additional meetings scheduled as needed.
 
-### Contact Information:
+## **Contact Information**
 
-| Name          | Primary Communication Method | Secondary Communication Method | Phone Number   |
-|---------------|-------------------------------|--------------------------------|----------------|
-| Agilan Kumar  | Discord                       | Email                         | (XXX) XXX-XXXX |
-| Andrew Rushton| Discord                       | Email                         | (XXX) XXX-XXXX |
-| David Diaz    | Discord                       | Email                         | (928) 276-0266 |
-| Zachary Romero| Discord                       | Email                         | (XXX) XXX-XXXX |
+| Name             | Primary Communication Method | Secondary Communication Method | Third Communication Method |
+|-------------------|-------------------------------|---------------------------------|----------------------------|
+| Agilan Kumar     | Discord                       | Email                          | Canvas                     |
+| Andrew Rushton   | Discord                       | Email                          | Canvas                     |
+| David Diaz       | Discord                       | Email                          | Canvas                     |
+| Zachary Romero   | Discord                       | Email                          | Canvas                     |
+
 
 ---
 
