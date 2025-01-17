@@ -20,27 +20,72 @@ tags:
 **Team Goals:**
 
    
-1. Ensure compliance with UART daisy chain communication protocols.
+1. **Ensure Communication Protocol Compliance:** Strictly adhere to the UART daisy chain communication protocols to facilitate seamless connectivity between all subsystems.
    
-2. Promote learning and growth in PCB design, microcontroller programming, and modular integration.
+2. **Foster Technical Excellence:** Promote in-depth learning and hands-on experience in PCB design, microcontroller programming, modular integration, and embedded systems development.
    
-3. Deliver an interactive STEM-themed display for K-12 students.
+3. **Create an Educational Impact:** Develop an engaging STEM-themed display that effectively demonstrates scientific or engineering concepts to K-12 students, sparking curiosity and interest in STEM fields.
    
-4. Present a professional and innovative project during the Innovation Showcase.
+4. **Deliver a High-Quality Product:** Design a modular system that exceeds course expectations in functionality, reliability, and presentation quality.
+   
+5. **Innovate and Inspire:** Incorporate cutting-edge ideas and unique design solutions to develop a project that stands out at the Innovation Showcase.
+    
+6. **Encourage Collaboration:** Maintain a strong sense of teamwork by leveraging individual strengths, sharing knowledge, and supporting one another throughout the design process.
+    
+7. **Meet Industry Standards:** Design a system that follows best practices in engineering, including the use of industry-standard components, reliable circuit designs, and user-friendly interfaces.
+    
+8. **Professional Presentation:** Prepare a polished project demonstration, including clear documentation, functional prototypes, and professional communication, for the Innovation Showcase.
+    
+9. **Time and Resource Management:** Adhere to deadlines, stay within budget constraints, and manage team resources effectively to achieve project goals without unnecessary delays or overspending.
+    
+10. **Enhance Career Readiness:** Use this project as a platform to showcase individual and team expertise, improve engineering portfolios, and gain valuable project management experience.
 
-5. Collaborate effectively to develop a modular and functional system for the course project.
+
+### **How We Developed These Goals:**
+Our team spent time discussing individual aspirations and shared objectives. We aligned our priorities to ensure a unified approach toward success, emphasizing technical growth, collaboration, and impact on STEM education. By combining our ideas, we defined goals that reflect our commitment to learning, innovation, and professional development.
 
 ---
 
-## Product Mission Statement
+## **Product Mission Statement**
 
-Our mission is to design an engaging STEM-themed system for K-12 students, demonstrating scientific and engineering concepts interactively. By focusing on modularity, interactivity, and robust communication, we aim to inspire curiosity and excitement for STEM education.
+Our mission is to design an engaging, innovative STEM-themed system for K-12 students that demonstrates scientific and engineering concepts through interactive, modular, and user-friendly technology. By leveraging cutting-edge communication protocols, intuitive interfaces, and a robust modular design, we aim to create an inspiring and educational experience that fosters curiosity, critical thinking, and a passion for STEM disciplines.
 
-### Objectives:
-- Create an educational and interactive hands-on experience.
-- Integrate modular subsystems (sensor, actuator, HMI, communication) seamlessly.
-- Implement a user-friendly Human-Machine Interface (HMI).
-- Ensure reliable UART communication and MQTT connectivity for IoT functionality.
+### **Objectives:**
+1. **Educational and Interactive Design:**
+   - Develop a hands-on system that allows K-12 students to explore STEM concepts through active engagement and interaction.
+   - Incorporate real-world applications of engineering and science to provide meaningful learning experiences.
+
+2. **Seamless Modular Integration:**
+   - Design individual subsystems (sensor, actuator, HMI, and communication) to connect effortlessly via standardized UART daisy chain communication.
+   - Ensure modularity for easy expansion, troubleshooting, and future improvements.
+
+3. **Innovative and User-Friendly Interface:**
+   - Implement a Human-Machine Interface (HMI) with push buttons, an OLED screen, and intuitive controls for an easy and engaging user experience.
+   - Provide real-time data visualization and system control for effective interaction.
+
+4. **Robust Communication and Connectivity:**
+   - Utilize reliable UART communication to ensure smooth and efficient data exchange between subsystems.
+   - Integrate MQTT or equivalent IoT functionality to demonstrate bidirectional internet communication and enable remote monitoring or control.
+
+5. **Professional and High-Quality Design:**
+   - Follow industry-standard practices in circuit design, component selection, and software development to ensure reliability and scalability.
+   - Use surface-mount technology for professional-grade PCB fabrication and ensure compliance with project specifications.
+
+6. **STEM Engagement and Outreach:**
+   - Create a project that not only meets the requirements of the course but also serves as a tool to inspire young learners to pursue STEM careers.
+   - Incorporate creative and interactive features that make complex concepts accessible to a non-technical audience.
+
+7. **Technical Growth and Career Development:**
+   - Provide team members with hands-on experience in PCB design, microcontroller programming, and system integration.
+   - Enhance engineering portfolios with innovative design and documentation to improve career readiness.
+
+8. **Sustainability and Future Proofing:**
+   - Design a system that supports easy updates, enhancements, and potential reuse for future projects or applications.
+   - Utilize eco-friendly components and design strategies wherever possible.
+
+
+### **How We Developed This Mission:**
+The mission statement and objectives were developed through team discussions focused on shared goals and aspirations. By combining individual insights, course requirements, and a commitment to innovation, the team defined a product vision that aims to exceed expectations and deliver a meaningful impact.
 
 ---
 
