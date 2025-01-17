@@ -19,9 +19,13 @@ tags:
 
 **Team Goals:**
 1. Collaborate effectively to develop a modular and functional system for the course project.
+   
 2. Ensure compliance with UART daisy chain communication protocols.
+   
 3. Promote learning and growth in PCB design, microcontroller programming, and modular integration.
+   
 4. Deliver an interactive STEM-themed display for K-12 students.
+   
 5. Present a professional and innovative project during the Innovation Showcase.
 
 ---
@@ -83,9 +87,13 @@ Roles will rotate bi-weekly to ensure equal participation and learning opportuni
 
 ### Team Project Description
 The team project aims to design a STEM-themed interactive display system for K-12 students. It will consist of the following modular subsystems:
+
 1. **Sensor Subsystem:** Includes a sensor that communicates via I2C or SPI.
+   
 2. **Actuator Subsystem:** Includes an actuator for bidirectional control and response.
+   
 3. **HMI Subsystem:** Implements push buttons and an OLED screen for user interaction.
+   
 4. **Communication Subsystem:** Ensures reliable UART communication and MQTT-based IoT connectivity.
 
 ### Individual Contributions:
