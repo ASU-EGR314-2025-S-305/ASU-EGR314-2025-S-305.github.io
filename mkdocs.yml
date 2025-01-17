@@ -1,6 +1,6 @@
-site_name: EGR314 Report Template
-site_url: https://embedded-systems-design.github.io/template_report
-repo_url: https://github.com/embedded-systems-design/template_report
+site_name: ASU-EGR314-2025-S-305 Team Organization
+site_url: https://ASU-EGR314-2025-S-305.github.io
+repo_url: https://github.com/ASU-EGR314-2025-S-305/ASU-EGR314-2025-S-305.github.io
 edit_uri: edit/main/docs/
 theme:
   name: material
@@ -23,13 +23,10 @@ theme:
     - navigation.prune
     - content.action.edit
     - navigation.footer
-#    - navigation.sections
-#    - navigation.expand
-#    - navigation.instant # doesn't work that well
 
 markdown_extensions:
-  - attr_list #add attributes using curly brackets to images, see https://squidfunk.github.io/mkdocs-material/reference/images/
-  - md_in_html # see https://squidfunk.github.io/mkdocs-material/reference/images/
+  - attr_list
+  - md_in_html
   - footnotes
   - pymdownx.arithmatex:
       generic: true
@@ -44,10 +41,10 @@ draft_docs: |
   **/*_unpublished.md
   **/*_draft.md
   **/*_draft**
-  
+
 plugins:
   - search
-  - glightbox # allow resize images, see https://squidfunk.github.io/mkdocs-material/reference/images/
+  - glightbox
 
 extra_css:
   - stylesheets/extra.css  
@@ -59,11 +56,11 @@ extra_javascript:
 not_in_nav: |
   static
   
-copyright: "Copyright &copy; 2024 team-name-here"
+copyright: "Copyright &copy; 2024 ASU-EGR314-2025-S-305 Team"
 
 extra:
   generator: false
   social:
     - icon: fontawesome/regular/file-code
-      link: /2023_fall
-      name: 2023 Site    
+      link: /2024_fall
+      name: 2024 Site
