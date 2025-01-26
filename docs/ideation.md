@@ -1,4 +1,4 @@
-# Project Idea and Concept Generation
+# Project Ideation and Concept Generation
 
 ## Introduction
 This page documents the process and methodologies used in generating ideas and concepts for our project.
