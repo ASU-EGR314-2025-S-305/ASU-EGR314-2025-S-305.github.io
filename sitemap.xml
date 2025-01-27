@@ -21,6 +21,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://ASU-EGR314-2025-S-305.github.io/something/</loc>
+         <lastmod>2025-01-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://ASU-EGR314-2025-S-305.github.io/static/node_modules/mathjax/</loc>
          <lastmod>2025-01-27</lastmod>
          <changefreq>daily</changefreq>
