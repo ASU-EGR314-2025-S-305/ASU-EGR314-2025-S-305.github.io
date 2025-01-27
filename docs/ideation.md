@@ -1,5 +1,8 @@
 # **Project Ideation and Concept Generation**
 
+## **Abstract**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=4idBWLHa1T7gQbJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## **Introduction**
 Our team recognized the importance of thoroughly understanding our challenge before diving into solutions. We needed to clearly define the goal of our exhibit—what message or concept we wanted to communicate—and identify who our audience would be. These foundational steps were critical to ensure that our efforts aligned with the needs and expectations of the visitors we aimed to engage. By focusing on fostering curiosity, learning, and meaningful interactions, we set the stage for designing an exhibit that could leave a lasting impression.
 
