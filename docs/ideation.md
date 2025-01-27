@@ -19,7 +19,9 @@ To begin brainstorming, our team used the app Lucidchart to document progress fr
 ## Key Findings
 Summarize the main ideas and concepts that emerged from the process here.
 
+## Final Design Concept
 ![Concept Image](images/concept.png)
+Our group chose to create a this because it will show that.
 
 ## Conclusion
 Conclude with the impact of these ideas on the project's development and future steps.
