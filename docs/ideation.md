@@ -20,10 +20,16 @@ The primary goal of our exhibit is to communicate a specific message or concept 
 The audience may vary widely, from young children to adults, and should be clearly defined during the planning phase. Whether targeting a specific age group, skill level, or interest, understanding the audience helps tailor the exhibit to their needs. For example, children between the ages of 6 and 10 may require simple, intuitive designs, while an exhibit for all ages would demand accessibility for people of varying physical sizes and abilities. Front-end evaluation helps identify the audience’s existing knowledge, interests, and misconceptions, enabling a more relevant and engaging experience for diverse visitors.
 
 ## **Brainstorming Process**
-To begin brainstorming, our team used the app Lucidchart to document progress from our sessions.
+Our brainstorming sessions were structured to foster creativity and collaboration while addressing the diverse challenges associated with designing an effective and engaging exhibit. We utilized Lucidchart, a versatile tool for documenting and organizing ideas in real time. Through a series of structured sessions, we explored various aspects of the project, including:
+
 - Brainstorming sessions
+  We encouraged team members to freely contribute ideas without judgment, fostering a collaborative and open environment. Following brainstorming best practices, we focused on generating a wide variety of ideas, prioritizing quantity over quality initially to ensure even unconventional ideas were considered.
+
 - SWOT analysis
+Each idea was evaluated using a SWOT framework to identify its strengths, weaknesses, opportunities, and threats, helping us focus on practical and impactful solutions.
+  
 - Prototyping and feedback loops
+Rough prototypes were created for selected concepts, and feedback was collected to refine and improve ideas through iterative design loops.
 
 ## **Key Findings**
 Summarize the main ideas and concepts that emerged from the process here.
