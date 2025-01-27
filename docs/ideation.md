@@ -36,24 +36,24 @@ Rough prototypes were created for selected concepts, and feedback was collected 
 From our brainstorming and analysis, the following ideas emerged as practical, impactful, and aligned with the goals of the project:
 
 1. **Bernoulli Effect Demonstrator**
-   - **Concept**: A hands-on exhibit where visitors can adjust airflow using fans and observe how objects like ping-pong balls levitate.
-   - **Audience Impact**: Engages visitors by visualizing fluid dynamics in a fun, interactive way.
+   - Concept: A hands-on exhibit where visitors can adjust airflow using fans and observe how objects like ping-pong balls levitate.
+   - Audience Impact: Engages visitors by visualizing fluid dynamics in a fun, interactive way.
 
 2. **Simple Weather Station**
-   - **Concept**: A device that measures temperature, humidity, and light levels, with real-time display and internet connectivity.
-   - **Audience Impact**: Helps students understand environmental monitoring and weather data through live sensor feedback and actuation.
+   - Concept: A device that measures temperature, humidity, and light levels, with real-time display and internet connectivity.
+   - Audience Impact: Helps students understand environmental monitoring and weather data through live sensor feedback and actuation.
 
 3. **Self-Balancing Robot**
-   - **Concept**: A robot that uses gyroscopes and motors to balance on two wheels, teaching feedback loops and stability.
-   - **Audience Impact**: Demonstrates control systems in robotics, with options for user adjustments via a phone app.
+   - Concept: A robot that uses gyroscopes and motors to balance on two wheels, teaching feedback loops and stability.
+   - Audience Impact: Demonstrates control systems in robotics, with options for user adjustments via a phone app.
 
 4. **Line-Following Robot**
-   - **Concept**: A robot that follows a drawn line on a surface, teaching pathfinding algorithms and sensor use.
-   - **Audience Impact**: Simple to operate and visually engaging, allowing students to experiment with paths.
+   - Concept: A robot that follows a drawn line on a surface, teaching pathfinding algorithms and sensor use.
+   - Audience Impact: Simple to operate and visually engaging, allowing students to experiment with paths.
 
 5. **Interactive LED Sound Visualizer**
-   - **Concept**: A sound-activated LED matrix that displays patterns and waveforms based on sound input, visualizing the properties of sound waves.
-   - **Audience Impact**: Combines audio and visuals to create an immersive STEM learning experience, teaching about frequency, amplitude, and waveforms.
+   - Concept: A sound-activated LED matrix that displays patterns and waveforms based on sound input, visualizing the properties of sound waves.
+   - Audience Impact**: Combines audio and visuals to create an immersive STEM learning experience, teaching about frequency, amplitude, and waveforms.
 
 
 ## **Final Design Concept**
