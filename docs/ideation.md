@@ -8,6 +8,12 @@ Our team recognized the importance of thoroughly understanding our challenge bef
 
 To move forward, we initiated a brainstorming session to generate potential solutions and features for our exhibit. Drawing inspiration from best practices in interactive exhibit design, we considered factors like intuitive controls, safety, accessibility, and engagement. Our goal was to explore a wide variety of ideas, encourage creativity, and develop concepts that could address both the needs of our audience and the unique challenges presented by our project. Through this process, we aimed to identify innovative and practical solutions to bring our vision to life.
 
+## **Understanding the Exhibit**
+
+Our exhibit aims to create an engaging, hands-on learning experience that allows visitors to explore fundamental STEM concepts interactively. The goal is to inspire curiosity and critical thinking by providing an intuitive, user-friendly experience that encourages visitors to experiment and understand key scientific principles. Through interactive demonstrations, we strive to bridge the gap between theoretical knowledge and real-world applications, making learning both fun and educational.
+
+Our primary audience includes K-12 students, educators, and families seeking to enhance their understanding of STEM concepts through interactive exhibits. The design of our exhibit takes into consideration factors such as varying age groups, cognitive abilities, and accessibility needs. For younger audiences, the interface will be simple and visually engaging, while older students and educators will benefit from deeper insights and advanced features. Ensuring safety, durability, and inclusivity is paramount, allowing all visitors to participate and gain meaningful insights from the experience.
+
 ## **Preparation**
 The primary goal of our exhibit is to communicate a specific message or concept effectively through interactive engagement. Whether it’s magnifying an image, demonstrating a phenomenon, comparing objects, or encouraging cause-and-effect reasoning, the exhibit should allow visitors to explore and learn in a hands-on manner. Clear objectives help determine whether an interactive device is the best medium for conveying the desired information. The design should focus on fostering curiosity, learning, and enjoyment while providing memorable experiences for visitors.
 
