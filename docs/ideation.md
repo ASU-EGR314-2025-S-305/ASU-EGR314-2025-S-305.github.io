@@ -21,6 +21,7 @@ To begin brainstorming, our team used the app Lucidchart to document progress fr
 
 ## **Key Findings**
 Summarize the main ideas and concepts that emerged from the process here.
+David does something here
 
 ## **Final Design Concept**
 ![Concept Image](images/concept.png)
