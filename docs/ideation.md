@@ -126,7 +126,20 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 *Figure 1.4: Final Design Concept* 
 </div>
 
-Our group chose to create this because it will show that.
+Our concept sketch is of a line following a robot designed to teach museum visitors about pathfinding algorithms and sensor functionality. This concept satisfies all the needs of the museum visitors by offering an engaging and hands-on learning experience. The robot’s ability to follow a line demonstrates the real-world application of sensor-based navigation, similar to autonomous cars. Visitors will gain insights into how the sensors detect and respond to the environment and how the algorithm processes the data to make decisions. The interactive nature of this device is very user-friendly and easy to use for all ages. 
+
+Science Exhibits Readings Summary:
+Clear instruction labels make the device intuitive and educational. We will provide easy-to-read instruction labels for the visitors to easily use and understand. 
+As far as controls it will be fairly simple since the algorithm requires the visitor to draw a line and the robot will follow. 
+The robot will be made to be durable since many visitors will be using it and the device needs to be able to last for long periods. 
+We will provide a very detailed instruction label on the device and make sure it is clear to read so no error can be made during use.
+
+Our project will be split into four main components: 
+1. The first will be the output screen, which will display the real-time camera view of the robot to further teach the concepts of how the software functions and what the machine is doing. The screen will also function as a controller for the robot, allowing you to power it off and change certain settings. 
+1. The second will be the wireless connection between the robot and the screen, which will be an internet-based two-way communication. 
+1. The third component will be the camera sensor and the coding behind the visual detection as well as the position calculation. 
+1. The fourth and final will be the motor controls as well as handling input data from the sensors.
+
 
 ## **Conclusion**
 The goal of the project is to provide a device that can help teach students all types of sciences and give them a head start if they are heading
