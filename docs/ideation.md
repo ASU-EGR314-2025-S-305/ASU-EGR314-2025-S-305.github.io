@@ -57,7 +57,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 
 ## **Final Design Concept**
-![Concept Image](images/concept.png)
+![Concept Image](static/logo.png)
 Our group chose to create a this because it will show that.
 
 ## **Conclusion**
