@@ -141,7 +141,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 ## **Final Design Concept**
 
 <div align="center">
-<img src="images/concept.png" alt="Concept Design" />
+<img src="images/Screenshot 2025-01-27 224050.png" alt="Concept Design" />
 </div>
 
 <div align="center">
