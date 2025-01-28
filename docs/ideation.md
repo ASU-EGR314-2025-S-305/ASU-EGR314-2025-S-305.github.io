@@ -35,7 +35,11 @@ Our brainstorming sessions were structured to foster creativity and collaboratio
 
 To begin the brainstorming process, we first discussed the major features and systems that would make our project both educational for the audience and a valuable learning experience for our team. From these discussions, we identified the need for multiple systems incorporating sensors, actuators, and human-machine interfaces (HMI). In addition, we emphasized the importance of safety and durability, instructional aids for better learning, and interactivity features to accommodate audiences with diverse abilities.
 
+![Final Brainstorming Image](images/brainstormconcepts.png)
+
 As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
+
+![Final Brainstorming Image](images/brainstormmid.png)
 
 ---
 
@@ -103,9 +107,16 @@ Our brainstorming sessions were structured to foster creativity and collaboratio
 - **Prototyping and feedback loops**: Rough prototypes were developed for selected concepts, and iterative feedback was collected. This allowed us to improve and refine ideas based on functionality, feasibility, and user engagement.
 
 To begin the brainstorming process, we first discussed the major features and systems that would make our project both educational for the audience and a valuable learning experience for our team. From these discussions, we identified the need for multiple systems incorporating sensors, actuators, and human-machine interfaces (HMI). In addition, we emphasized the importance of safety and durability, instructional aids for better learning, and interactivity features to accommodate audiences with diverse abilities.
+![Brainstorming Concepts Image](images/brainstormconcepts.png)
+<div align="center">
+*Figure 1.1: Organized Brainstorming Results*
+</div>
 
 As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
-
+![Mid Brainstorming Image](images/brainstormmid.png)
+<div align="center">
+*Figure 1.2: Organized Brainstorming Results*
+</div>
 ---
 
 ## Sorted and Ranked Ideas
@@ -142,11 +153,9 @@ After completing the brainstorming process, we organized and refined the ideas t
 
 ---
 
-<div align="center">
-  
 ![Final Brainstorming Image](images/brainstormfinal.png)
-
-*Figure 1.2: Organized Brainstorming Results*
+<div align="center">
+*Figure 1.3: Organized Brainstorming Results*
 </div>
 
 ## Key Findings
@@ -187,9 +196,9 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 ## **Final Design Concept**
 <div align="center">
   
-![Concept Image](static/logo.png)
+![Concept Image](images/designconcept.png)
 
-*Figure 1.3: Final Design Concept* 
+*Figure 1.4: Final Design Concept* 
 </div>
 
 Our group chose to create a this because it will show that.
