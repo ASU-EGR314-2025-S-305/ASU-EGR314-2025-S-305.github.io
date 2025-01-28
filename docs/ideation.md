@@ -18,12 +18,7 @@ Our exhibit aims to create an engaging, hands-on learning experience that allows
 
 Our primary audience includes K-12 students, educators, and families seeking to enhance their understanding of STEM concepts through interactive exhibits. The design of our exhibit takes into consideration factors such as varying age groups, cognitive abilities, and accessibility needs. For younger audiences, the interface will be simple and visually engaging, while older students and educators will benefit from deeper insights and advanced features. Ensuring safety, durability, and inclusivity is paramount, allowing all visitors to participate and gain meaningful insights from the experience.
 
-## **Preparation**
-The primary goal of our exhibit is to communicate a specific message or concept effectively through interactive engagement. Whether it’s magnifying an image, demonstrating a phenomenon, comparing objects, or encouraging cause-and-effect reasoning, the exhibit should allow visitors to explore and learn in a hands-on manner. Clear objectives help determine whether an interactive device is the best medium for conveying the desired information. The design should focus on fostering curiosity, learning, and enjoyment while providing memorable experiences for visitors.
-
-The audience may vary widely, from young children to adults, and should be clearly defined during the planning phase. Whether targeting a specific age group, skill level, or interest, understanding the audience helps tailor the exhibit to their needs. For example, children between the ages of 6 and 10 may require simple, intuitive designs, while an exhibit for all ages would demand accessibility for people of varying physical sizes and abilities. Front-end evaluation helps identify the audience’s existing knowledge, interests, and misconceptions, enabling a more relevant and engaging experience for diverse visitors.
-
-## **Brainstorming Process and Sorted Ideas**
+## Brainstorming Process and Sorted Ideas
 
 Our brainstorming sessions were structured to foster creativity and collaboration while addressing the diverse challenges of designing an effective and engaging exhibit. We utilized Lucidchart as a tool for documenting and organizing ideas in real-time. Through a series of structured sessions, we explored various aspects of the project to ensure a thorough and impactful ideation process. The key components of our approach included:
 
@@ -35,84 +30,13 @@ Our brainstorming sessions were structured to foster creativity and collaboratio
 
 To begin the brainstorming process, we first discussed the major features and systems that would make our project both educational for the audience and a valuable learning experience for our team. From these discussions, we identified the need for multiple systems incorporating sensors, actuators, and human-machine interfaces (HMI). In addition, we emphasized the importance of safety and durability, instructional aids for better learning, and interactivity features to accommodate audiences with diverse abilities.
 
-![Final Brainstorming Image](images/brainstormconcepts.png)
-
-As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
-
-![Final Brainstorming Image](images/brainstormmid.png)
-
----
-
-## Sorted and Ranked Ideas
-
-After completing the brainstorming process, we organized and refined the ideas to identify the most impactful and cohesive concepts for our project. The ideas were grouped into four main categories—Sensors, Actuators, Controls (HMI), and Interactivity Features. Each category was further analyzed to select the top ideas based on feasibility, educational value, and audience engagement.
-
-### Sensors
-- Analog temperature sensor with amplification for real-time weather monitoring.
-
-- Pressure sensor to measure airflow changes in a Bernoulli Effect demonstration.
-   
-- Ultrasonic sensor to detect distances for precise measurements.
-   
-- Light sensor to measure ambient brightness for dynamic lighting systems.
-   
-- Microphone to capture sound for audio visualization projects.
-
-### Actuators
-
-- Adjustable fan to simulate airflow in weather or fluid dynamics experiments.
-   
-- Brushed DC motor to enable movement in robotic systems.
-   
-- Stepper motor for precise control in self-balancing robots or visual demonstrations.
-   
-- LED matrix for dynamic data visualization and engaging displays.
-   
-- Vibrating motor to provide tactile feedback in interactive systems.
-
-### Controls (HMI)
-
-- OLED screen to display real-time data and visual feedback.
-   
-- Buttons to adjust speed, brightness, or other system parameters.
-   
-- Joystick for controlling robotic movements or interactive inputs.
-   
-- Gesture recognition sensor for touchless control of the system.
-   
-- Voice commands for hands-free interaction with the exhibit.
-
-### Interactivity Features
-
-- Levitation demonstration using airflow to engage users in fluid dynamics.
-   
-- Dynamic LED patterns that react to sound or user inputs.
-   
-- Real-time graphing of sensor data on a display for educational purposes.
-   
-- Adjustable weather simulation with temperature and airflow changes.
-   
-- Reaction timer to measure and display user response times.
-
----
-
-# Brainstorming Process and Sorted Ideas
-
-Our brainstorming sessions were structured to foster creativity and collaboration while addressing the diverse challenges of designing an effective and engaging exhibit. We utilized Lucidchart as a tool for documenting and organizing ideas in real-time. Through a series of structured sessions, we explored various aspects of the project to ensure a thorough and impactful ideation process. The key components of our approach included:
-
-- **Brainstorming sessions**: Team members were encouraged to freely contribute ideas in a judgment-free and collaborative environment. We focused on generating a wide range of ideas, prioritizing quantity over quality during the initial phase to ensure unconventional and innovative concepts were considered.
-
-- **SWOT analysis**: Each idea was evaluated using a framework to identify its strengths, weaknesses, opportunities, and threats. This process helped us refine our focus and prioritize ideas that were both practical and impactful.
-
-- **Prototyping and feedback loops**: Rough prototypes were developed for selected concepts, and iterative feedback was collected. This allowed us to improve and refine ideas based on functionality, feasibility, and user engagement.
-
-To begin the brainstorming process, we first discussed the major features and systems that would make our project both educational for the audience and a valuable learning experience for our team. From these discussions, we identified the need for multiple systems incorporating sensors, actuators, and human-machine interfaces (HMI). In addition, we emphasized the importance of safety and durability, instructional aids for better learning, and interactivity features to accommodate audiences with diverse abilities.
 ![Brainstorming Concepts Image](images/brainstormconcepts.png)
 <div align="center">
 *Figure 1.1: Organized Brainstorming Results*
 </div>
 
 As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
+
 ![Mid Brainstorming Image](images/brainstormmid.png)
 <div align="center">
 *Figure 1.2: Organized Brainstorming Results*
