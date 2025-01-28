@@ -31,6 +31,11 @@ Each idea was evaluated using a SWOT framework to identify its strengths, weakne
 - Prototyping and feedback loops
 Rough prototypes were created for selected concepts, and feedback was collected to refine and improve ideas through iterative design loops.
 
+To begin Brainstorming, we first began by deciding on what major concepts our project should have that would make it beneficial for both the audience learning about the idea and our group for learning how to create it. Though some discussions, we knew we needed to have multiple systems with **Sensors**, **Actuators**, and **HMI** of **Human-Machine Interfacing**. To add to this, our team also wanted to focus on **Safety and Durability**, **Instructional Aids**, and some form of **Interactivity Aids** for those with some disabilities. From this, we decided to organize at least 100 concepts that could be added into the final project.
+
+![Final Brainstorming Image](images/brainstormfinal.png)
+*Figure 1.2: Organized Brainstorming Results*
+
 ## Key Findings
 
 From our brainstorming and analysis, the following ideas emerged as practical, impactful, and aligned with the goals of the project:
@@ -58,6 +63,8 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 ## **Final Design Concept**
 ![Concept Image](static/logo.png)
+*Figure 1.3: Final Design Concept*
+
 Our group chose to create a this because it will show that.
 
 ## **Conclusion**
