@@ -1,7 +1,11 @@
 # **Project Ideation and Concept Generation**
 
 ## **Abstract**
+<div align="center">
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=4idBWLHa1T7gQbJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
 
 ## **Introduction**
 Our team recognized the importance of thoroughly understanding our challenge before diving into solutions. We needed to clearly define the goal of our exhibit—what message or concept we wanted to communicate—and identify who our audience would be. These foundational steps were critical to ensure that our efforts aligned with the needs and expectations of the visitors we aimed to engage. By focusing on fostering curiosity, learning, and meaningful interactions, we set the stage for designing an exhibit that could leave a lasting impression.
@@ -33,8 +37,12 @@ Rough prototypes were created for selected concepts, and feedback was collected 
 
 To begin Brainstorming, we first began by deciding on what major concepts our project should have that would make it beneficial for both the audience learning about the idea and our group for learning how to create it. Though some discussions, we knew we needed to have multiple systems with **Sensors**, **Actuators**, and **HMI** of **Human-Machine Interfacing**. To add to this, our team also wanted to focus on **Safety and Durability**, **Instructional Aids**, and some form of **Interactivity Aids** for those with some disabilities. From this, we decided to organize at least 100 concepts that could be added into the final project.
 
+<div align="center">
+  
 ![Final Brainstorming Image](images/brainstormfinal.png)
-*Figure 1.2: Organized Brainstorming Results*
+
+  *Figure 1.2: Organized Brainstorming Results*
+</div>
 
 ## Key Findings
 
@@ -62,8 +70,11 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 
 ## **Final Design Concept**
+<div align="center">
+  
 ![Concept Image](static/logo.png)
-*Figure 1.3: Final Design Concept*
+
+*Figure 1.3: Final Design Concept* </div>
 
 Our group chose to create a this because it will show that.
 
