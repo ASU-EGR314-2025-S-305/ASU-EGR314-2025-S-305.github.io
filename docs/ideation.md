@@ -119,12 +119,10 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 
 ## **Final Design Concept**
-<div align="center">
 
 ![Concept Design](images/concept.png)
-</div>
-<div align="center">
 
+<div align="center">
 *Figure 1.4: Final Design Concept* 
 </div>
 
