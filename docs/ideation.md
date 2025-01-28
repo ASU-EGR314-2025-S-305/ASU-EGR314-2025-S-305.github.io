@@ -77,7 +77,7 @@ After completing the brainstorming process, we organized and refined the ideas t
 
 ---
 
-![Final Brainstorming Image](https://github.com/user-attachments/assets/daba5b0a-3399-4b2e-ac26-3ae9232ff851)
+![Final Brainstorming Image](images/brainstormfinal.png)
 
 <div align="center">
 *Figure 1.3: Final Organized Brainstorming Results*
@@ -121,7 +121,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 ## **Final Design Concept**
 <div align="center">
 
-  ![Our Image Description]()
+![Concept Design](images/concept.png)
 
 *Figure 1.4: Final Design Concept* 
 </div>
