@@ -77,10 +77,6 @@ After completing the brainstorming process, we organized and refined the ideas t
 
 ---
 
-![Final Brainstorming Image](images/brainstormfinal.png)
-<div align="center">
-*Figure 1.3: Organized Brainstorming Results*
-</div>
 
 ## Key Findings
 
