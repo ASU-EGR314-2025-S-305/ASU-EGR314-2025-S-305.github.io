@@ -41,7 +41,7 @@ To begin Brainstorming, we first began by deciding on what major concepts our pr
   
 ![Final Brainstorming Image](images/brainstormfinal.png)
 
-  *Figure 1.2: Organized Brainstorming Results*
+*Figure 1.2: Organized Brainstorming Results*
 </div>
 
 ## Key Findings
@@ -74,7 +74,8 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
   
 ![Concept Image](static/logo.png)
 
-*Figure 1.3: Final Design Concept* </div>
+*Figure 1.3: Final Design Concept* 
+</div>
 
 Our group chose to create a this because it will show that.
 
