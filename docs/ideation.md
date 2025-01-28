@@ -77,6 +77,11 @@ After completing the brainstorming process, we organized and refined the ideas t
 
 ---
 
+![Final Brainstorming Image](https://github.com/user-attachments/assets/daba5b0a-3399-4b2e-ac26-3ae9232ff851)
+
+<div align="center">
+*Figure 1.3: Organized Brainstorming Results*
+</div>
 
 ## Key Findings
 
