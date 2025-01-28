@@ -48,7 +48,7 @@ After that we sorted all of the ideas into the categories that they fit best in.
 
 ![Mid Brainstorming Image](images/brainstormmid.png)
 <div align="center">
-*Figure 1.2: Mid Organized Brainstorming Results*
+*Figure 1.3: Mid Organized Brainstorming Results*
 </div>
 
 
@@ -56,7 +56,7 @@ Finally we decided which ideas were most important to us and put stars on them.
 
 ![Final Brainstorming Image](images/BrainstormFinal.png)
 <div align="center">
-*Figure 1.2: Mid Organized Brainstorming Results*
+*Figure 1.4: Final Organized Brainstorming Results*
 </div>
 ---
 
@@ -97,7 +97,7 @@ After completing the brainstorming process, we organized and refined the ideas t
 ![Final Brainstorming Image](images/brainstormfinal.png)
 
 <div align="center">
-*Figure 1.3: Final Organized Brainstorming Results*
+*Figure 1.5: Final Organized Brainstorming Results*
 </div>
 
 ## **Key Findings**
@@ -142,7 +142,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 </div>
 
 <div align="center">
-*Figure 1.4: Final Design Concept*
+*Figure 1.6: Final Design Concept*
 </div>
 
 Our concept sketch is of a line following a robot designed to teach museum visitors about pathfinding algorithms and sensor functionality. This concept satisfies all the needs of the museum visitors by offering an engaging and hands-on learning experience. The robot’s ability to follow a line demonstrates the real-world application of sensor-based navigation, similar to autonomous cars. Visitors will gain insights into how the sensors detect and respond to the environment and how the algorithm processes the data to make decisions. The interactive nature of this device is very user-friendly and easy to use for all ages. 
