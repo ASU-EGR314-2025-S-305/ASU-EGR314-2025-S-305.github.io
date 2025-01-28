@@ -61,6 +61,5 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 Our group chose to create a this because it will show that.
 
 ## **Conclusion**
-Conclude with the impact of these ideas on the project's development and future steps.
 The goal of the project is to provide a device that can help teach students all types of sciences and give them a head start if they are heading
 toward the engineering route. We are supposed to create an impact on the audience and help them engage in a STEM learning experience. The brainstorming of the devices that could help engage students can help show them a wide variety of STEM-related topics. The topics can range from understanding science topics better to a headstart toward robotics, and many other topics. These devices will also be very engaging so that users can easily figure out how they work. The goal is to provide a learning experience more than anything and help the user better understand the topic they are learning. As for the future
