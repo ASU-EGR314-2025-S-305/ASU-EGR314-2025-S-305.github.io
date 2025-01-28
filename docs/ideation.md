@@ -120,8 +120,9 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 ## **Final Design Concept**
 <div align="center">
-  
-![Concept Image](images/designconcept.png)
+
+  ![My Image Description](![687bf9ec-7815-4c92-95e5-5c518d619afc](https://github.com/user-attachments/assets/7fd3fa7e-db82-4a60-aa7e-8286bd087245)
+)
 
 *Figure 1.4: Final Design Concept* 
 </div>
