@@ -32,14 +32,14 @@ To begin the brainstorming process, we first discussed the major features and sy
 
 ![Brainstorming Concepts Image](images/brainstormconcepts.png)
 <div align="center">
-*Figure 1.1: Organized Brainstorming Results*
+*Figure 1.1: Organized Ideas*
 </div>
 
 As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
 
 ![Mid Brainstorming Image](images/brainstormmid.png)
 <div align="center">
-*Figure 1.2: Organized Brainstorming Results*
+*Figure 1.2: Mid Organized Brainstorming Results*
 </div>
 ---
 
@@ -80,7 +80,7 @@ After completing the brainstorming process, we organized and refined the ideas t
 ![Final Brainstorming Image](https://github.com/user-attachments/assets/daba5b0a-3399-4b2e-ac26-3ae9232ff851)
 
 <div align="center">
-*Figure 1.3: Organized Brainstorming Results*
+*Figure 1.3: Final Organized Brainstorming Results*
 </div>
 
 ## Key Findings
