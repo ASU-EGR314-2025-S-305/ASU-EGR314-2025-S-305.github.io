@@ -18,7 +18,7 @@ Our exhibit aims to create an engaging, hands-on learning experience that allows
 
 Our primary audience includes K-12 students, educators, and families seeking to enhance their understanding of STEM concepts through interactive exhibits. The design of our exhibit takes into consideration factors such as varying age groups, cognitive abilities, and accessibility needs. For younger audiences, the interface will be simple and visually engaging, while older students and educators will benefit from deeper insights and advanced features. Ensuring safety, durability, and inclusivity is paramount, allowing all visitors to participate and gain meaningful insights from the experience.
 
-## Brainstorming Process and Sorted Ideas
+## **Brainstorming Process**
 
 Our brainstorming sessions were structured to foster creativity and collaboration while addressing the diverse challenges of designing an effective and engaging exhibit. We utilized Lucidchart as a tool for documenting and organizing ideas in real-time. Through a series of structured sessions, we explored various aspects of the project to ensure a thorough and impactful ideation process. The key components of our approach included:
 
@@ -37,13 +37,27 @@ To begin the brainstorming process, we first discussed the major features and sy
 
 As a result, we aimed to generate at least 100 ideas covering the key areas of sensors, actuators, controls, and interactive features. This comprehensive approach helped us lay the foundation for a modular, user-friendly project design that could be further refined during the subsequent steps.
 
+![Early Brainstorming Image](images/BrainstormEarly.png)
+<div align="center">
+*Figure 1.2: Early Unorganized Brainstorming Results*
+</div>
+
+After that we sorted all of the ideas into the categories that they fit best in.
+
 ![Mid Brainstorming Image](images/brainstormmid.png)
+<div align="center">
+*Figure 1.2: Mid Organized Brainstorming Results*
+</div>
+
+Finally we decided which ideas were most important to us and put stars on them.
+
+![Final Brainstorming Image](images/BrainstormFinal.png)
 <div align="center">
 *Figure 1.2: Mid Organized Brainstorming Results*
 </div>
 ---
 
-## Sorted and Ranked Ideas
+## **Sorted and Ranked Ideas**
 
 After completing the brainstorming process, we organized and refined the ideas to identify the most impactful and cohesive concepts for our project. The ideas were grouped into four main categories—Sensors, Actuators, Controls (HMI), and Interactivity Features. Each category was further analyzed to select the top ideas based on feasibility, educational value, and audience engagement.
 
@@ -83,7 +97,7 @@ After completing the brainstorming process, we organized and refined the ideas t
 *Figure 1.3: Final Organized Brainstorming Results*
 </div>
 
-## Key Findings
+## **Key Findings**
 
 From our brainstorming and analysis, the following ideas emerged as practical, impactful, and aligned with the goals of the project:
 
