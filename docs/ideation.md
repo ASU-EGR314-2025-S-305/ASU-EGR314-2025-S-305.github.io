@@ -142,9 +142,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 ![Concept Design](images/concept.png)
 
-<div align="center">
 *Figure 1.6: Final Design Concept*
-</div>
 
 Our concept sketch is of a line following a robot designed to teach museum visitors about pathfinding algorithms and sensor functionality. This concept satisfies all the needs of the museum visitors by offering an engaging and hands-on learning experience. The robot’s ability to follow a line demonstrates the real-world application of sensor-based navigation, similar to autonomous cars. Visitors will gain insights into how the sensors detect and respond to the environment and how the algorithm processes the data to make decisions. The interactive nature of this device is very user-friendly and easy to use for all ages. 
 
