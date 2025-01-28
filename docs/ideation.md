@@ -53,7 +53,7 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 **Interactive LED Sound Visualizer**
    - Concept: A sound-activated LED matrix that displays patterns and waveforms based on sound input, visualizing the properties of sound waves.
-   - Audience Impact**: Combines audio and visuals to create an immersive STEM learning experience, teaching about frequency, amplitude, and waveforms.
+   - Audience Impact: Combines audio and visuals to create an immersive STEM learning experience, teaching about frequency, amplitude, and waveforms.
 
 
 ## **Final Design Concept**
