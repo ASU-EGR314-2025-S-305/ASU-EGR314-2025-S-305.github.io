@@ -142,7 +142,6 @@ After completing the brainstorming process, we organized and refined the ideas t
 
 ---
 
-
 <div align="center">
   
 ![Final Brainstorming Image](images/brainstormfinal.png)
