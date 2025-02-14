@@ -1,4 +1,5 @@
-
+## * Sequence Diagram (Process Flow)**
+---
 ```mermaid
 sequenceDiagram
     autonumber
