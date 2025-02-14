@@ -451,14 +451,7 @@
     Sequence Diagram
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#process-flow-of-the-sequence-diagram" class="md-nav__link">
-    Process Flow of the Sequence Diagram
-  </a>
-  
-    <nav class="md-nav" aria-label="Process Flow of the Sequence Diagram">
+    <nav class="md-nav" aria-label="Sequence Diagram">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -558,26 +551,6 @@
   </a>
   
     <nav class="md-nav" aria-label="Message Structure Diagram">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#message-format" class="md-nav__link">
-    Message Format:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#process-flow-of-the-message-structure" class="md-nav__link">
-    Process Flow of the Message Structure
-  </a>
-  
-    <nav class="md-nav" aria-label="Process Flow of the Message Structure">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -774,14 +747,7 @@
     Sequence Diagram
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#process-flow-of-the-sequence-diagram" class="md-nav__link">
-    Process Flow of the Sequence Diagram
-  </a>
-  
-    <nav class="md-nav" aria-label="Process Flow of the Sequence Diagram">
+    <nav class="md-nav" aria-label="Sequence Diagram">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -884,26 +850,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#message-format" class="md-nav__link">
-    Message Format:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#process-flow-of-the-message-structure" class="md-nav__link">
-    Process Flow of the Message Structure
-  </a>
-  
-    <nav class="md-nav" aria-label="Process Flow of the Message Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#esp32-requests-sensor-data" class="md-nav__link">
     ESP32 Requests Sensor Data
   </a>
@@ -982,7 +928,6 @@
 
 <h1 id="block-diagram-process-diagram-and-message-structure"><strong>Block Diagram, Process Diagram, and Message Structure</strong></h1>
 <h2 id="sequence-diagram"><strong>Sequence Diagram</strong></h2>
-<h2 id="process-flow-of-the-sequence-diagram"><strong>Process Flow of the Sequence Diagram</strong></h2>
 <h3 id="user-starts-the-robot">User Starts the Robot</h3>
 <ul>
 <li>The user interacts with the HMI to enable line-following mode.</li>
@@ -1054,9 +999,6 @@
     HMI--&gt;&gt;User: Display Robot Path Progress
     HMI--&gt;&gt;User: Display Robot Path Progress</code></pre></h2>
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
-<h3 id="message-format">Message Format:</h3>
-<p>All messages in our system use I2C communication to exchange data between the ESP32 (main controller), sensor (color detection), motor driver (speed control), and HMI (OLED display).  </p>
-<h2 id="process-flow-of-the-message-structure"><strong>Process Flow of the Message Structure</strong></h2>
 <h3 id="esp32-requests-sensor-data">ESP32 Requests Sensor Data</h3>
 <ul>
 <li>The ESP32 sends an I2C request to the Color Sensor.</li>
