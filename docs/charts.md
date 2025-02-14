@@ -2,7 +2,6 @@
 
 ## **Sequence Diagram**
 
-## **Process Flow of the Sequence Diagram**
 
 ### User Starts the Robot
 - The user interacts with the HMI to enable line-following mode.
@@ -75,9 +74,6 @@ sequenceDiagram
 
 ## **Message Structure Diagram**
 
-### Message Format:
-All messages in our system use I2C communication to exchange data between the ESP32 (main controller), sensor (color detection), motor driver (speed control), and HMI (OLED display).  
-## **Process Flow of the Message Structure**
 
 ### ESP32 Requests Sensor Data
 - The ESP32 sends an I2C request to the Color Sensor.
