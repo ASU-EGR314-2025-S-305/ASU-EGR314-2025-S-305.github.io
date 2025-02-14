@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sequence-diagram-process-flow" class="md-skip">
+        <a href="#process-flow-of-the-sequence-diagram" class="md-skip">
           Skip to content
         </a>
       
@@ -443,23 +443,115 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sequence-diagram-process-flow" class="md-nav__link">
-    Sequence Diagram (Process Flow)
+  <a href="#process-flow-of-the-sequence-diagram" class="md-nav__link">
+    Process Flow of the Sequence Diagram
   </a>
   
-    <nav class="md-nav" aria-label="Sequence Diagram (Process Flow)">
+    <nav class="md-nav" aria-label="Process Flow of the Sequence Diagram">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-the-line-following-robot-works" class="md-nav__link">
-    How the Line-Following Robot Works:
+  <a href="#user-starts-the-robot" class="md-nav__link">
+    User Starts the Robot
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#esp32-requests-color-sensor-data" class="md-nav__link">
+    ESP32 Requests Color Sensor Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-sensor-sends-data-to-esp32" class="md-nav__link">
+    Color Sensor Sends Data to ESP32
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-processes-data-and-adjusts-motor-speed" class="md-nav__link">
+    ESP32 Processes Data and Adjusts Motor Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-driver-executes-speed-adjustments" class="md-nav__link">
+    Motor Driver Executes Speed Adjustments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
+    ESP32 Updates the HMI for User Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
+    User Monitors the Robot's Status on the HMI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-process-repeats-continuously" class="md-nav__link">
+    The Process Repeats Continuously
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#communication-protocols-used" class="md-nav__link">
-    Communication Protocols Used:
+    Communication Protocols Used
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+    sequenceDiagram
+    autonumber
+    participant User
+    participant HMI as Agilan (HMI - OLED Display)
+    participant Zack as Zack (ESP32 - Main Controller)
+    participant David as David (Color Sensor Subsystem - I2C)
+    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+
+    User-&gt;&gt;HMI: Start Line-Following Mode
+    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
+    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Color Data (I2C)
+    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
+    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
+    Zack--&gt;&gt;HMI: Update Robot Status
+    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI--&gt;&gt;User: Display Robot Path Progress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-structure-diagram" class="md-nav__link">
+    Message Structure Diagram
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Structure Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-format" class="md-nav__link">
+    Message Format:
   </a>
   
 </li>
@@ -603,23 +695,115 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sequence-diagram-process-flow" class="md-nav__link">
-    Sequence Diagram (Process Flow)
+  <a href="#process-flow-of-the-sequence-diagram" class="md-nav__link">
+    Process Flow of the Sequence Diagram
   </a>
   
-    <nav class="md-nav" aria-label="Sequence Diagram (Process Flow)">
+    <nav class="md-nav" aria-label="Process Flow of the Sequence Diagram">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#how-the-line-following-robot-works" class="md-nav__link">
-    How the Line-Following Robot Works:
+  <a href="#user-starts-the-robot" class="md-nav__link">
+    User Starts the Robot
   </a>
   
 </li>
         
           <li class="md-nav__item">
+  <a href="#esp32-requests-color-sensor-data" class="md-nav__link">
+    ESP32 Requests Color Sensor Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-sensor-sends-data-to-esp32" class="md-nav__link">
+    Color Sensor Sends Data to ESP32
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-processes-data-and-adjusts-motor-speed" class="md-nav__link">
+    ESP32 Processes Data and Adjusts Motor Speed
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-driver-executes-speed-adjustments" class="md-nav__link">
+    Motor Driver Executes Speed Adjustments
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
+    ESP32 Updates the HMI for User Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
+    User Monitors the Robot's Status on the HMI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-process-repeats-continuously" class="md-nav__link">
+    The Process Repeats Continuously
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#communication-protocols-used" class="md-nav__link">
-    Communication Protocols Used:
+    Communication Protocols Used
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+    sequenceDiagram
+    autonumber
+    participant User
+    participant HMI as Agilan (HMI - OLED Display)
+    participant Zack as Zack (ESP32 - Main Controller)
+    participant David as David (Color Sensor Subsystem - I2C)
+    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+
+    User-&gt;&gt;HMI: Start Line-Following Mode
+    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
+    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Color Data (I2C)
+    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
+    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
+    Zack--&gt;&gt;HMI: Update Robot Status
+    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI--&gt;&gt;User: Display Robot Path Progress
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#message-structure-diagram" class="md-nav__link">
+    Message Structure Diagram
+  </a>
+  
+    <nav class="md-nav" aria-label="Message Structure Diagram">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#message-format" class="md-nav__link">
+    Message Format:
   </a>
   
 </li>
@@ -654,48 +838,62 @@
 
   <h1>Charts</h1>
 
-<h2 id="sequence-diagram-process-flow"><strong>Sequence Diagram (Process Flow)</strong></h2>
-<h3 id="how-the-line-following-robot-works"><strong>How the Line-Following Robot Works:</strong></h3>
+<h2 id="process-flow-of-the-sequence-diagram"><strong>Process Flow of the Sequence Diagram</strong></h2>
+<h3 id="user-starts-the-robot">User Starts the Robot</h3>
 <ul>
-<li>
-<p>The User starts the robot using the HMI subsystem.</p>
-</li>
-<li>
-<p>The ESP32 microcontroller receives the command from the HMI and begins processing sensor data.</p>
-</li>
-<li>
-<p>The Color Sensor Subsystem detects the path line and communicates this data to the ESP32 using I2C communication.</p>
-</li>
-<li>
-<p>The ESP32 processes the sensor data and determines the required motor adjustments to keep the robot on track.</p>
-</li>
-<li>
-<p>The Motor Driver Subsystem receives speed and direction commands from the ESP32 and adjusts the motor movement accordingly using PWM signals.</p>
-</li>
-<li>
-<p>The Motor Driver also sends status feedback back to the ESP32 to ensure real-time adjustments.</p>
-</li>
-<li>
-<p>The HMI  receives updated robot status from the ESP32 and displays the information for the user.</p>
-</li>
-<li>
-<p>The process repeats continuously, ensuring that the robot follows the line smoothly.  </p>
-</li>
+<li>The user interacts with the HMI to enable line-following mode.</li>
+<li>The HMI sends a command to the ESP32  to activate the system.</li>
 </ul>
-<h3 id="communication-protocols-used"><strong>Communication Protocols Used:</strong></h3>
+<h3 id="esp32-requests-color-sensor-data">ESP32 Requests Color Sensor Data</h3>
 <ul>
-<li>
-<p>I2C Communication → Used between the ESP32, Motor and the Color Sensor for data exchange.</p>
-</li>
-<li>
-<p>PWM Signals → Used between the ESP32 and the Motor Driver to control motor speed and direction.</p>
-</li>
-<li>
-<p>UART Communication → Used for debugging and potential remote monitoring.  </p>
-</li>
+<li>The ESP32 sends an I2C request to the Color Sensor to read the line position.</li>
+</ul>
+<h3 id="color-sensor-sends-data-to-esp32">Color Sensor Sends Data to ESP32</h3>
+<ul>
+<li>The Color Sensor detects the line position and sends the processed data (e.g., whether the robot is:</li>
+<li>Centered</li>
+<li>Drifting Left</li>
+<li>Drifting Right</li>
+<li>The sensor sends this data back to the ESP32 over I2C.</li>
+</ul>
+<h3 id="esp32-processes-data-and-adjusts-motor-speed">ESP32 Processes Data and Adjusts Motor Speed</h3>
+<ul>
+<li>Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:</li>
+<li>If centered, maintain speed.</li>
+<li>If drifting left, increase right motor speed and reduce left motor speed.</li>
+<li>If drifting right, increase left motor speed and reduce right motor speed.</li>
+<li>The ESP32 sends an I2C command to the Motor Driver with the updated speed values.</li>
+</ul>
+<h3 id="motor-driver-executes-speed-adjustments">Motor Driver Executes Speed Adjustments</h3>
+<ul>
+<li>The Motor Driver processes the speed and direction commands and adjusts the motors accordingly.  </li>
+<li>The Motor Driver sends a confirmation message back to the ESP32, indicating that the motor speed update was applied.</li>
+</ul>
+<h3 id="esp32-updates-the-hmi-for-user-feedback">ESP32 Updates the HMI for User Feedback</h3>
+<ul>
+<li>The ESP32 sends real-time updates to the HMI (OLED Display), showing:</li>
+<li>Robot movement status (e.g., "Turning Left", "Going Straight").</li>
+<li>Sensor readings (e.g., "Line detected at center", "Line shifted left").</li>
+<li>Motor speed adjustments in real-time.</li>
+</ul>
+<h3 id="user-monitors-the-robots-status-on-the-hmi">User Monitors the Robot's Status on the HMI</h3>
+<ul>
+<li>The HMI displays live feedback about the robot’s navigation and behavior.</li>
+<li>The user can see real-time updates on how the robot is following the path.</li>
+</ul>
+<h3 id="the-process-repeats-continuously">The Process Repeats Continuously</h3>
+<ul>
+<li>The system loops from Step 2 to Step 7, ensuring the robot dynamically adjusts its speed and direction in real-time.</li>
 </ul>
 <hr />
-<pre class="mermaid"><code>sequenceDiagram
+<h2 id="communication-protocols-used"><strong>Communication Protocols Used</strong></h2>
+<ul>
+<li>I2C Communication → Used between the ESP32, Color Sensor, and Motor Driver for real-time data exchange and control.  </li>
+<li>PWM Signals → Used internally within the Motor Driver to control motor speed and direction based on ESP32 commands.  </li>
+<li>UART Communication → Used for debugging and optional remote monitoring.  </li>
+</ul>
+<hr />
+<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
@@ -711,7 +909,26 @@
     Andrew--&gt;&gt;Zack: Send Motor Status Feedback
     Zack--&gt;&gt;HMI: Update Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
-    HMI--&gt;&gt;User: Display Robot Path Progress</code></pre>
+    HMI--&gt;&gt;User: Display Robot Path Progress</code></pre></h2>
+<h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
+<h3 id="message-format">Message Format:</h3>
+<p>All messages in our system use I2C communication to exchange data between the ESP32 (main controller), sensor (color detection), motor driver (speed control), and HMI (OLED display).  </p>
+<p>```mermaid
+sequenceDiagram
+    autonumber
+    participant ESP32 as Zack (ESP32 - Main Controller - I2C)
+    participant Sensor as David (Color Sensor - I2C)
+    participant Motor as Andrew (Motor Driver - I2C)
+    participant HMI as Agilan (HMI - OLED Display - I2C)</p>
+<pre><code>ESP32-&gt;&gt;Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
+Sensor--&gt;&gt;ESP32: Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
+
+ESP32-&gt;&gt;Motor: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
+Motor--&gt;&gt;ESP32: Confirm Speed Update [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
+
+ESP32-&gt;&gt;HMI: Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
+HMI--&gt;&gt;User: Display Robot Status
+</code></pre>
 
 
 
