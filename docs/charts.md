@@ -75,8 +75,44 @@ sequenceDiagram
 
 ### Message Format:
 All messages in our system use I2C communication to exchange data between the ESP32 (main controller), sensor (color detection), motor driver (speed control), and HMI (OLED display).  
+## **Process Flow of the Message Structure**
 
+### ESP32 Requests Sensor Data
+- The ESP32 sends an I2C request to the Color Sensor.
+- The request follows the format:  
+  `[0x41 | Source: ESP32 | Destination: Sensor | Read Color Command | End Byte: 0x42]`
 
+### Color Sensor Responds to ESP32
+- The Color Sensor reads the line position and sends the data back to the ESP32.
+- The response format:  
+  `[0x41 | Source: Sensor | Destination: ESP32 | Color Value | End Byte: 0x42]`
+
+### ESP32 Sends Speed Adjustment to Motor
+- Based on the sensor data, the ESP32 calculates the required motor speed and direction adjustments.
+- The ESP32 sends an I2C command to the Motor Driver with the new speed settings.
+- The message format:  
+  `[0x41 | Source: ESP32 | Destination: Motor | Speed Value | End Byte: 0x42]`
+
+### Motor Driver Acknowledges Command
+- The Motor Driver processes the command and adjusts the wheel speed.
+- The Motor Driver then sends a confirmation message back to the ESP32.
+- The confirmation format:  
+  `[0x41 | Source: Motor | Destination: ESP32 | Speed Ack | End Byte: 0x42]`
+
+### ESP32 Sends Status Update to HMI
+- The ESP32 sends real-time status updates to the HMI.
+- The HMI displays the current status (e.g., robot speed, direction, sensor readings).
+- The message format:  
+  `[0x41 | Source: ESP32 | Destination: HMI | Status Data | End Byte: 0x42]`
+
+### HMI Displays Robot Status to the User
+- The HMI receives the status update and displays live feedback on the screen.
+- The user can monitor how the robot is navigating based on sensor input and speed adjustments.
+
+### The Process Repeats Continuously
+- The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.
+
+---
 ```mermaid
 sequenceDiagram
     autonumber
