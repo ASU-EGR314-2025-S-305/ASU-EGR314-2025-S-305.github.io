@@ -113,6 +113,7 @@ All messages in our system use I2C communication to exchange data between the ES
 - The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.
 
 ---
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -129,3 +130,4 @@ sequenceDiagram
 
     ESP32->>HMI: Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
     HMI-->>User: Display Robot Status
+```
