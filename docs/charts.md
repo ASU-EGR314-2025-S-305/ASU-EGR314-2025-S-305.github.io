@@ -18,7 +18,7 @@
 - The process repeats continuously, ensuring that the robot follows the line smoothly.  
 
 ### **Communication Protocols Used:**
-- I2C Communication → Used between the ESP32 and the Color Sensor for data exchange.
+- I2C Communication → Used between the ESP32, Motor and the Color Sensor for data exchange.
   
 - PWM Signals → Used between the ESP32 and the Motor Driver to control motor speed and direction.
   
