@@ -559,24 +559,23 @@
 
   <h1>Charts</h1>
 
-<p>```mermaid
-sequenceDiagram
+<pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
     participant Zack as Zack (ESP32 - Main Controller)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Andrew as Andrew (Motor Driver Subsystem - PWM)</p>
-<pre><code>User-&gt;&gt;HMI: Start Line-Following Mode
-HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
-Zack-&gt;&gt;David: Request Line Color Data (I2C)
-David--&gt;&gt;Zack: Send Color Data (I2C)
-Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
-Andrew--&gt;&gt;Zack: Send Motor Status Feedback
-Zack--&gt;&gt;HMI: Update Robot Status
-HMI--&gt;&gt;User: Display Robot Path Progress
-HMI--&gt;&gt;User: Display Robot Path Progress
-</code></pre>
+    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+
+    User-&gt;&gt;HMI: Start Line-Following Mode
+    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
+    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Color Data (I2C)
+    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
+    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
+    Zack--&gt;&gt;HMI: Update Robot Status
+    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI--&gt;&gt;User: Display Robot Path Progress</code></pre>
 
 
 
