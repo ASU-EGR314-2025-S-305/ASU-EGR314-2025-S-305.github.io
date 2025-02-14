@@ -25,7 +25,7 @@ This sequence diagram illustrates how messages and commands flow between the use
   
 - UART Communication → Used for debugging and potential remote monitoring.  
 
-``` mermaid
+```mermaid
 sequenceDiagram
     autonumber
     participant User
@@ -41,4 +41,5 @@ sequenceDiagram
     Zack->>Andrew: Adjust Speed and Direction (PWM)
     Andrew-->>Zack: Send Motor Status Feedback
     Zack-->>HMI: Update Robot Status
+    HMI-->>User: Display Robot Path Progress
     HMI-->>User: Display Robot Path Progress
