@@ -695,7 +695,7 @@
 <p>UART Communication → Used for debugging and potential remote monitoring.  </p>
 </li>
 </ul>
-<p>``` mermaid
+<p>```mermaid
 sequenceDiagram
     autonumber
     participant User
@@ -710,6 +710,7 @@ David--&gt;&gt;Zack: Send Color Data (I2C)
 Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
 Andrew--&gt;&gt;Zack: Send Motor Status Feedback
 Zack--&gt;&gt;HMI: Update Robot Status
+HMI--&gt;&gt;User: Display Robot Path Progress
 HMI--&gt;&gt;User: Display Robot Path Progress
 </code></pre>
 
