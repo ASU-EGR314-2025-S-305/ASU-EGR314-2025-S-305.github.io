@@ -40,7 +40,6 @@
 ### The Process Repeats Continuously
 - The system loops from Step 2 to Step 7, ensuring the robot dynamically adjusts its speed and direction in real-time.
 
----
 
 ## **Communication Protocols Used**
 - I2C Communication → Used between the ESP32, Color Sensor, and Motor Driver for real-time data exchange and control.  
