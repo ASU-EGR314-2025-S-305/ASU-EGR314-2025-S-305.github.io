@@ -92,11 +92,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#sequence-diagram-process-flow" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -408,17 +403,6 @@
       
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Charts
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -428,50 +412,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sequence-diagram-process-flow" class="md-nav__link">
-    Sequence Diagram (Process Flow)
-  </a>
-  
-    <nav class="md-nav" aria-label="Sequence Diagram (Process Flow)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-the-line-following-robot-works" class="md-nav__link">
-    How the Line-Following Robot Works:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#communication-protocols-used" class="md-nav__link">
-    Communication Protocols Used:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -596,41 +536,6 @@
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#sequence-diagram-process-flow" class="md-nav__link">
-    Sequence Diagram (Process Flow)
-  </a>
-  
-    <nav class="md-nav" aria-label="Sequence Diagram (Process Flow)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#how-the-line-following-robot-works" class="md-nav__link">
-    How the Line-Following Robot Works:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#communication-protocols-used" class="md-nav__link">
-    Communication Protocols Used:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -654,47 +559,6 @@
 
   <h1>Charts</h1>
 
-<h2 id="sequence-diagram-process-flow">Sequence Diagram (Process Flow)</h2>
-<p>This sequence diagram illustrates how messages and commands flow between the user, microcontroller, sensors, actuators, and HMI display in our line-following robot system.  </p>
-<h3 id="how-the-line-following-robot-works"><strong>How the Line-Following Robot Works:</strong></h3>
-<ul>
-<li>
-<p>The User starts the robot using the HMI subsystem.</p>
-</li>
-<li>
-<p>The ESP32 microcontroller receives the command from the HMI and begins processing sensor data.</p>
-</li>
-<li>
-<p>The Color Sensor Subsystem detects the path line and communicates this data to the ESP32 using I2C communication.</p>
-</li>
-<li>
-<p>The ESP32 processes the sensor data and determines the required motor adjustments to keep the robot on track.</p>
-</li>
-<li>
-<p>The Motor Driver Subsystem receives speed and direction commands from the ESP32 and adjusts the motor movement accordingly using PWM signals.</p>
-</li>
-<li>
-<p>The Motor Driver also sends status feedback back to the ESP32 to ensure real-time adjustments.</p>
-</li>
-<li>
-<p>The HMI  receives updated robot status from the ESP32 and displays the information for the user.</p>
-</li>
-<li>
-<p>The process repeats continuously, ensuring that the robot follows the line smoothly.  </p>
-</li>
-</ul>
-<h3 id="communication-protocols-used"><strong>Communication Protocols Used:</strong></h3>
-<ul>
-<li>
-<p>I2C Communication → Used between the ESP32 and the Color Sensor for data exchange.</p>
-</li>
-<li>
-<p>PWM Signals → Used between the ESP32 and the Motor Driver to control motor speed and direction.</p>
-</li>
-<li>
-<p>UART Communication → Used for debugging and potential remote monitoring.  </p>
-</li>
-</ul>
 <p>```mermaid
 sequenceDiagram
     autonumber
