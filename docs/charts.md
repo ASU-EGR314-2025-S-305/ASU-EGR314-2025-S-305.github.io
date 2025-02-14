@@ -1,4 +1,4 @@
-## * Sequence Diagram (Process Flow)**
+## **Sequence Diagram (Process Flow)**
 ---
 ```mermaid
 sequenceDiagram
