@@ -17,3 +17,4 @@ sequenceDiagram
     Zack-->>HMI: Update Robot Status
     HMI-->>User: Display Robot Path Progress
     HMI-->>User: Display Robot Path Progress
+```
