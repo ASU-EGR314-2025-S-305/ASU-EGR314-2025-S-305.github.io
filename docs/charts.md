@@ -80,15 +80,15 @@ All messages in our system use I2C communication to exchange data between the ES
 ```mermaid
 sequenceDiagram
     autonumber
-    participant ESP32 as Zack (ESP32 - Main Controller - I2C)
+    participant ESP32 as Zack (PIC18 - Motor Driver - I2C)
     participant Sensor as David (Color Sensor - I2C)
-    participant Motor as Andrew (Motor Driver - I2C)
+    participant Motor as Andrew (Wifi Connectivity - MQTT)
     participant HMI as Agilan (HMI - OLED Display - I2C)
 
     ESP32->>Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
     Sensor-->>ESP32: Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
     
-    ESP32->>Motor: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
+    PIC18->>Motor: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
     Motor-->>ESP32: Confirm Speed Update [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
 
     ESP32->>HMI: Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
