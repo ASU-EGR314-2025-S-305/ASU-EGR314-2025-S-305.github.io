@@ -561,6 +561,68 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#process-flow-of-the-message-structure" class="md-nav__link">
+    Process Flow of the Message Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Flow of the Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32-requests-sensor-data" class="md-nav__link">
+    ESP32 Requests Sensor Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-sensor-responds-to-esp32" class="md-nav__link">
+    Color Sensor Responds to ESP32
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-sends-speed-adjustment-to-motor" class="md-nav__link">
+    ESP32 Sends Speed Adjustment to Motor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-driver-acknowledges-command" class="md-nav__link">
+    Motor Driver Acknowledges Command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-sends-status-update-to-hmi" class="md-nav__link">
+    ESP32 Sends Status Update to HMI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hmi-displays-robot-status-to-the-user" class="md-nav__link">
+    HMI Displays Robot Status to the User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-process-repeats-continuously_1" class="md-nav__link">
+    The Process Repeats Continuously
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -813,6 +875,68 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#process-flow-of-the-message-structure" class="md-nav__link">
+    Process Flow of the Message Structure
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Flow of the Message Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esp32-requests-sensor-data" class="md-nav__link">
+    ESP32 Requests Sensor Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-sensor-responds-to-esp32" class="md-nav__link">
+    Color Sensor Responds to ESP32
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-sends-speed-adjustment-to-motor" class="md-nav__link">
+    ESP32 Sends Speed Adjustment to Motor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#motor-driver-acknowledges-command" class="md-nav__link">
+    Motor Driver Acknowledges Command
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#esp32-sends-status-update-to-hmi" class="md-nav__link">
+    ESP32 Sends Status Update to HMI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hmi-displays-robot-status-to-the-user" class="md-nav__link">
+    HMI Displays Robot Status to the User
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-process-repeats-continuously_1" class="md-nav__link">
+    The Process Repeats Continuously
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -912,6 +1036,50 @@
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
 <h3 id="message-format">Message Format:</h3>
 <p>All messages in our system use I2C communication to exchange data between the ESP32 (main controller), sensor (color detection), motor driver (speed control), and HMI (OLED display).  </p>
+<h2 id="process-flow-of-the-message-structure"><strong>Process Flow of the Message Structure</strong></h2>
+<h3 id="esp32-requests-sensor-data">ESP32 Requests Sensor Data</h3>
+<ul>
+<li>The ESP32 sends an I2C request to the Color Sensor.</li>
+<li>The request follows the format:<br />
+<code>[0x41 | Source: ESP32 | Destination: Sensor | Read Color Command | End Byte: 0x42]</code></li>
+</ul>
+<h3 id="color-sensor-responds-to-esp32">Color Sensor Responds to ESP32</h3>
+<ul>
+<li>The Color Sensor reads the line position and sends the data back to the ESP32.</li>
+<li>The response format:<br />
+<code>[0x41 | Source: Sensor | Destination: ESP32 | Color Value | End Byte: 0x42]</code></li>
+</ul>
+<h3 id="esp32-sends-speed-adjustment-to-motor">ESP32 Sends Speed Adjustment to Motor</h3>
+<ul>
+<li>Based on the sensor data, the ESP32 calculates the required motor speed and direction adjustments.</li>
+<li>The ESP32 sends an I2C command to the Motor Driver with the new speed settings.</li>
+<li>The message format:<br />
+<code>[0x41 | Source: ESP32 | Destination: Motor | Speed Value | End Byte: 0x42]</code></li>
+</ul>
+<h3 id="motor-driver-acknowledges-command">Motor Driver Acknowledges Command</h3>
+<ul>
+<li>The Motor Driver processes the command and adjusts the wheel speed.</li>
+<li>The Motor Driver then sends a confirmation message back to the ESP32.</li>
+<li>The confirmation format:<br />
+<code>[0x41 | Source: Motor | Destination: ESP32 | Speed Ack | End Byte: 0x42]</code></li>
+</ul>
+<h3 id="esp32-sends-status-update-to-hmi">ESP32 Sends Status Update to HMI</h3>
+<ul>
+<li>The ESP32 sends real-time status updates to the HMI.</li>
+<li>The HMI displays the current status (e.g., robot speed, direction, sensor readings).</li>
+<li>The message format:<br />
+<code>[0x41 | Source: ESP32 | Destination: HMI | Status Data | End Byte: 0x42]</code></li>
+</ul>
+<h3 id="hmi-displays-robot-status-to-the-user">HMI Displays Robot Status to the User</h3>
+<ul>
+<li>The HMI receives the status update and displays live feedback on the screen.</li>
+<li>The user can monitor how the robot is navigating based on sensor input and speed adjustments.</li>
+</ul>
+<h3 id="the-process-repeats-continuously_1">The Process Repeats Continuously</h3>
+<ul>
+<li>The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.</li>
+</ul>
+<hr />
 <p>```mermaid
 sequenceDiagram
     autonumber
