@@ -1,4 +1,4 @@
-
+## **Sequence Diagram**
 
 ## **Process Flow of the Sequence Diagram**
 
