@@ -541,22 +541,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-pic-motor-driver-i2c-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Zack as Zack (ESP32 - Main Controller)
+    participant Zack as Zack (PIC - Motor Driver - I2C)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+    participant Andrew as Andrew (Wifi Connectivity - MQTT)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
-    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
+    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
     David--&gt;&gt;Zack: Send Color Data (I2C)
-    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
-    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
-    Zack--&gt;&gt;HMI: Update Robot Status
+    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
+    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
+    Andrew--&gt;&gt;HMI: Update Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
     HMI--&gt;&gt;User: Display Robot Path Progress
   </a>
@@ -916,22 +916,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-pic-motor-driver-i2c-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Zack as Zack (ESP32 - Main Controller)
+    participant Zack as Zack (PIC - Motor Driver - I2C)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+    participant Andrew as Andrew (Wifi Connectivity - MQTT)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
-    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
+    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
     David--&gt;&gt;Zack: Send Color Data (I2C)
-    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
-    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
-    Zack--&gt;&gt;HMI: Update Robot Status
+    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
+    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
+    Andrew--&gt;&gt;HMI: Update Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
     HMI--&gt;&gt;User: Display Robot Path Progress
   </a>
@@ -1082,21 +1082,21 @@
 <li>UART Communication → Used for debugging and optional remote monitoring.  </li>
 </ul>
 <hr />
-<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-esp32-main-controller-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-motor-driver-subsystem-pwm-user-hmi-start-line-following-mode-hmi-zack-activate-line-following-algorithm-zack-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-zack-andrew-adjust-speed-and-direction-pwm-andrew-zack-send-motor-status-feedback-zack-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
+<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-zack-as-zack-pic-motor-driver-i2c-participant-david-as-david-color-sensor-subsystem-i2c-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Zack as Zack (ESP32 - Main Controller)
+    participant Zack as Zack (PIC - Motor Driver - I2C)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+    participant Andrew as Andrew (Wifi Connectivity - MQTT)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Zack: Activate Line-Following Algorithm
-    Zack-&gt;&gt;David: Request Line Color Data (I2C)
+    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
+    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
     David--&gt;&gt;Zack: Send Color Data (I2C)
-    Zack-&gt;&gt;Andrew: Adjust Speed and Direction (PWM)
-    Andrew--&gt;&gt;Zack: Send Motor Status Feedback
-    Zack--&gt;&gt;HMI: Update Robot Status
+    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
+    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
+    Andrew--&gt;&gt;HMI: Update Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
     HMI--&gt;&gt;User: Display Robot Path Progress</code></pre></h2>
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
