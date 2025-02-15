@@ -59,9 +59,9 @@ sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Zack as Zack (PIC - Motor Driver - I2C)
-    participant David as David (Color Sensor Subsystem - I2C)
     participant Andrew as Andrew (Wifi Connectivity - MQTT)
+    participant David as David (Color Sensor Subsystem - I2C)
+    participant Zack as Zack (PIC - Motor Driver - I2C)
 
     User->>HMI: Start Line-Following Mode
     HMI->>Andrew: Activate Line-Following Algorithm
@@ -88,23 +88,23 @@ sequenceDiagram
 - The response format:  
   `[0x41 | Source: Sensor | Destination: ESP32 | Color Value | End Byte: 0x42]`
 
-### ESP32 Sends Speed Adjustment to Motor
+### ESP32 Sends Line Data to PIC18 
 - Based on the sensor data, the ESP32 calculates the required motor speed and direction adjustments.
 - The ESP32 sends an I2C command to the Motor Driver with the new speed settings.
 - The message format:  
-  `[0x41 | Source: ESP32 | Destination: Motor | Speed Value | End Byte: 0x42]`
+  `[0x41 | Source: ESP32 | Destination: PIC18 | Speed Value | End Byte: 0x42]`
 
-### Motor Driver Acknowledges Command
+### PIC18 gives Motor Driver Movement Command
 - The Motor Driver processes the command and adjusts the wheel speed.
 - The Motor Driver then sends a confirmation message back to the ESP32.
 - The confirmation format:  
-  `[0x41 | Source: Motor | Destination: ESP32 | Speed Ack | End Byte: 0x42]`
+  `[0x41 | Source: PIC18 | Destination: Motor Driver | Speed Ack | End Byte: 0x42]`
 
-### ESP32 Sends Status Update to HMI
+### PIC18 Sends Status Update to HMI
 - The ESP32 sends real-time status updates to the HMI.
 - The HMI displays the current status (e.g., robot speed, direction, sensor readings).
 - The message format:  
-  `[0x41 | Source: ESP32 | Destination: HMI | Status Data | End Byte: 0x42]`
+  `[0x41 | Source: PIC18 | Destination: HMI | Status Data | End Byte: 0x42]`
 
 ### HMI Displays Robot Status to the User
 - The HMI receives the status update and displays live feedback on the screen.
@@ -124,10 +124,10 @@ sequenceDiagram
     participant HMI as Agilan (HMI - OLED Display - I2C)
 
     ESP32->>Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
-    Sensor-->>ESP32: Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
+    Sensor-->>PIC18: Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
     
-    PIC18->>Motor: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
-    Motor-->>ESP32: Confirm Speed Update [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
+    PIC18->>Motor Driver: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
+    PIC18-->>ESP32: Confirm Speed Update [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
 
     ESP32->>HMI: Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
     HMI-->>User: Display Robot Status
