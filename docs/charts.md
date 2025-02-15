@@ -59,17 +59,17 @@ sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Zack as Zack (ESP32 - Main Controller)
+    participant Zack as Zack (PIC - Motor Driver - I2C)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Andrew as Andrew (Motor Driver Subsystem - PWM)
+    participant Andrew as Andrew (Wifi Connectivity - MQTT)
 
     User->>HMI: Start Line-Following Mode
-    HMI->>Zack: Activate Line-Following Algorithm
-    Zack->>David: Request Line Color Data (I2C)
+    HMI->>Andrew: Activate Line-Following Algorithm
+    Andrew->>David: Request Line Color Data (I2C)
     David-->>Zack: Send Color Data (I2C)
-    Zack->>Andrew: Adjust Speed and Direction (PWM)
-    Andrew-->>Zack: Send Motor Status Feedback
-    Zack-->>HMI: Update Robot Status
+    Andrew->>Zack: Adjust Speed and Direction (I2C)
+    Zack-->>Andrew: Send Motor Status Feedback
+    Andrew-->>HMI: Update Robot Status
     HMI-->>User: Display Robot Path Progress
     HMI-->>User: Display Robot Path Progress
 ```
