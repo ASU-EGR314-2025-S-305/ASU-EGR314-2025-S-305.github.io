@@ -134,3 +134,5 @@ sequenceDiagram
     ESP32->>HMI: Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
     HMI-->>User: Display Robot Status
 ```
+
+[Enlarged Sequence Diagram](images/Sequence_Diagram.pdf)
