@@ -31,8 +31,11 @@ Our brainstorming sessions were structured to foster creativity and collaboratio
 To begin the brainstorming process, we first discussed the major features and systems that would make our project both educational for the audience and a valuable learning experience for our team. From these discussions, we identified the need for multiple systems incorporating sensors, actuators, and human-machine interfaces (HMI). In addition, we emphasized the importance of safety and durability, instructional aids for better learning, and interactivity features to accommodate audiences with diverse abilities.
 
 ![Brainstorming Concepts Image](images/brainstormconcepts.png)
+
 <div align="center">
-*Figure 1.1: Organized Ideas*
+
+   Figure 1.1: Organized Ideas
+
 </div>
 
 <br>
@@ -40,8 +43,11 @@ As a result, we aimed to generate at least 100 ideas covering the key areas of s
 <br>
 
 ![Early Brainstorming Image](images/BrainstormEarly.png)
+
 <div align="center">
-*Figure 1.2: Early Unorganized Brainstorming Results*
+
+   Figure 1.2: Early Unorganized Brainstorming Results
+
 </div>
 
 <br>
@@ -49,8 +55,11 @@ After that we sorted all of the ideas into the categories that they fit best in.
 <br>
 
 ![Mid Brainstorming Image](images/brainstormmid.png)
+
 <div align="center">
-*Figure 1.3: Mid Organized Brainstorming Results*
+
+   Figure 1.3: Mid Organized Brainstorming Results
+
 </div>
 
 <br>
@@ -58,8 +67,11 @@ Finally we decided which ideas were most important to us and put stars on them.
 <br>
 
 ![Final Brainstorming Image](images/BrainstormFinal.png)
+
 <div align="center">
-*Figure 1.4: Final Organized Brainstorming Results*
+
+   Figure 1.4: Final Organized Brainstorming Results
+
 </div>
 ---
 
@@ -138,7 +150,8 @@ From our brainstorming and analysis, the following ideas emerged as practical, i
 
 ![Concept Design](images/concept.png)
 
-*Figure 1.6: Final Design Concept*
+Figure 1.6: Final Design Concept
+
 
 Our concept sketch is of a line following a robot designed to teach museum visitors about pathfinding algorithms and sensor functionality. This concept satisfies all the needs of the museum visitors by offering an engaging and hands-on learning experience. The robot’s ability to follow a line demonstrates the real-world application of sensor-based navigation, similar to autonomous cars. Visitors will gain insights into how the sensors detect and respond to the environment and how the algorithm processes the data to make decisions. The interactive nature of this device is very user-friendly and easy to use for all ages. 
 
