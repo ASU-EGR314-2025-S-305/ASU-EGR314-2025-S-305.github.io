@@ -159,7 +159,7 @@ The team project aims to design a STEM-themed interactive display system for K-1
 
 ### Links to Individual Datasheets:
 - [Agilan Kumar's Datasheet](#)
-- [Andrew Rushton's Datasheet](#)
+- [Andrew Rushton's Datasheet](https://arushton96.github.io/)
 - [David Diaz's Datasheet](#)
 - [Zachary Romero's Datasheet](#)
 
