@@ -68,9 +68,9 @@ sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
-    participant Andrew as Andrew (Wifi Connectivity - MQTT)
     participant David as David (Color Sensor Subsystem - I2C)
     participant Zack as Zack (PIC - Motor Driver - SPI)
+    participant Andrew as Andrew (Wifi Connectivity - MQTT)
 
     User->>HMI: Start Line-Following Mode
     HMI->>David: Record Line Color Data (I2C)
