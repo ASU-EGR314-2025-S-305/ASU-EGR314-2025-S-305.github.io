@@ -419,50 +419,64 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-starts-the-robot" class="md-nav__link">
-    User Starts the Robot
+  <a href="#1-user-starts-the-robot" class="md-nav__link">
+    1. User Starts the Robot
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-requests-color-sensor-data" class="md-nav__link">
-    ESP32 Requests Color Sensor Data
+  <a href="#2-esp32-requests-color-sensor-data" class="md-nav__link">
+    2. ESP32 Requests Color Sensor Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#color-sensor-sends-data-to-esp32" class="md-nav__link">
-    Color Sensor Sends Data to ESP32
+  <a href="#3-color-sensor-sends-data-to-esp32" class="md-nav__link">
+    3. Color Sensor Sends Data to ESP32
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-processes-data-and-adjusts-motor-speed" class="md-nav__link">
-    ESP32 Processes Data and Adjusts Motor Speed
+  <a href="#4-esp32-processes-and-sends-data-to-pic" class="md-nav__link">
+    4. ESP32 Processes and Sends Data to PIC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#motor-driver-executes-speed-adjustments" class="md-nav__link">
-    Motor Driver Executes Speed Adjustments
+  <a href="#5-pic-sends-command-to-motor-drivers" class="md-nav__link">
+    5. PIC Sends Command to Motor Drivers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
-    ESP32 Updates the HMI for User Feedback
+  <a href="#6-motor-driver-executes-speed-adjustments" class="md-nav__link">
+    6. Motor Driver Executes Speed Adjustments
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
-    User Monitors the Robot's Status on the HMI
+  <a href="#7-pic-confirms-movement-and-sends-movement-data-to-wifi" class="md-nav__link">
+    7. PIC Confirms Movement and Sends Movement Data to Wifi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
+    8. ESP32 Updates the HMI for User Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
+    9. User Monitors the Robot's Status on the HMI
   </a>
   
 </li>
@@ -487,23 +501,20 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-i2c-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
     participant Andrew as Andrew (Wifi Connectivity - MQTT)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Zack as Zack (PIC - Motor Driver - I2C)
+    participant Zack as Zack (PIC - Motor Driver - SPI)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
-    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
-    David--&gt;&gt;Zack: Send Color Data (I2C)
-    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
-    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
-    Andrew--&gt;&gt;HMI: Update Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI-&gt;&gt;David: Record Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Movement Data
+    Zack-&gt;&gt;Andrew: Update Robot Status
+    Andrew--&gt;&gt;HMI: Display Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
   </a>
   
@@ -713,50 +724,64 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#user-starts-the-robot" class="md-nav__link">
-    User Starts the Robot
+  <a href="#1-user-starts-the-robot" class="md-nav__link">
+    1. User Starts the Robot
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-requests-color-sensor-data" class="md-nav__link">
-    ESP32 Requests Color Sensor Data
+  <a href="#2-esp32-requests-color-sensor-data" class="md-nav__link">
+    2. ESP32 Requests Color Sensor Data
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#color-sensor-sends-data-to-esp32" class="md-nav__link">
-    Color Sensor Sends Data to ESP32
+  <a href="#3-color-sensor-sends-data-to-esp32" class="md-nav__link">
+    3. Color Sensor Sends Data to ESP32
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-processes-data-and-adjusts-motor-speed" class="md-nav__link">
-    ESP32 Processes Data and Adjusts Motor Speed
+  <a href="#4-esp32-processes-and-sends-data-to-pic" class="md-nav__link">
+    4. ESP32 Processes and Sends Data to PIC
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#motor-driver-executes-speed-adjustments" class="md-nav__link">
-    Motor Driver Executes Speed Adjustments
+  <a href="#5-pic-sends-command-to-motor-drivers" class="md-nav__link">
+    5. PIC Sends Command to Motor Drivers
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
-    ESP32 Updates the HMI for User Feedback
+  <a href="#6-motor-driver-executes-speed-adjustments" class="md-nav__link">
+    6. Motor Driver Executes Speed Adjustments
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
-    User Monitors the Robot's Status on the HMI
+  <a href="#7-pic-confirms-movement-and-sends-movement-data-to-wifi" class="md-nav__link">
+    7. PIC Confirms Movement and Sends Movement Data to Wifi
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
+    8. ESP32 Updates the HMI for User Feedback
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
+    9. User Monitors the Robot's Status on the HMI
   </a>
   
 </li>
@@ -781,23 +806,20 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-i2c-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
     participant Andrew as Andrew (Wifi Connectivity - MQTT)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Zack as Zack (PIC - Motor Driver - I2C)
+    participant Zack as Zack (PIC - Motor Driver - SPI)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
-    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
-    David--&gt;&gt;Zack: Send Color Data (I2C)
-    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
-    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
-    Andrew--&gt;&gt;HMI: Update Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI-&gt;&gt;David: Record Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Movement Data
+    Zack-&gt;&gt;Andrew: Update Robot Status
+    Andrew--&gt;&gt;HMI: Display Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress
   </a>
   
@@ -895,75 +917,79 @@
 
 <p><a href="../images/Team_Block_Diagram.pdf">Block Diagram PDF</a></p>
 <h2 id="sequence-diagram"><strong>Sequence Diagram</strong></h2>
-<h3 id="user-starts-the-robot">User Starts the Robot</h3>
+<h3 id="1-user-starts-the-robot">1. User Starts the Robot</h3>
 <ul>
-<li>The user interacts with the HMI to enable line-following mode.</li>
-<li>The HMI sends a command to the ESP32  to activate the system.</li>
+<li>The user interacts with the HMI to power on robot out of sleep, and enable line-following mode.</li>
+<li>The HMI sends a command to the ESP32 to activate the system.</li>
 </ul>
-<h3 id="esp32-requests-color-sensor-data">ESP32 Requests Color Sensor Data</h3>
+<h3 id="2-esp32-requests-color-sensor-data">2. ESP32 Requests Color Sensor Data</h3>
 <ul>
 <li>The ESP32 sends an I2C request to the Color Sensor to read the line position.</li>
 </ul>
-<h3 id="color-sensor-sends-data-to-esp32">Color Sensor Sends Data to ESP32</h3>
+<h3 id="3-color-sensor-sends-data-to-esp32">3. Color Sensor Sends Data to ESP32</h3>
 <ul>
-<li>The Color Sensor detects the line position and sends the processed data (e.g., whether the robot is:</li>
+<li>The Color Sensor detects the line position and records position data (e.g., whether the robot is:</li>
 <li>Centered</li>
 <li>Drifting Left</li>
 <li>Drifting Right</li>
 <li>The sensor sends this data back to the ESP32 over I2C.</li>
 </ul>
-<h3 id="esp32-processes-data-and-adjusts-motor-speed">ESP32 Processes Data and Adjusts Motor Speed</h3>
+<h3 id="4-esp32-processes-and-sends-data-to-pic">4. ESP32 Processes and Sends Data to PIC</h3>
 <ul>
 <li>Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:</li>
 <li>If centered, maintain speed.</li>
 <li>If drifting left, increase right motor speed and reduce left motor speed.</li>
 <li>If drifting right, increase left motor speed and reduce right motor speed.</li>
-<li>The ESP32 sends an I2C command to the Motor Driver with the updated speed values.</li>
+<li>The ESP32 sends the position command to the PIC with the updated speed values.</li>
 </ul>
-<h3 id="motor-driver-executes-speed-adjustments">Motor Driver Executes Speed Adjustments</h3>
+<h3 id="5-pic-sends-command-to-motor-drivers">5. PIC Sends Command to Motor Drivers</h3>
+<p>-The PIC recieves the command to move from the ESP32 ans speaks to the motor drivers over SPI</p>
+<h3 id="6-motor-driver-executes-speed-adjustments">6. Motor Driver Executes Speed Adjustments</h3>
 <ul>
 <li>The Motor Driver processes the speed and direction commands and adjusts the motors accordingly.  </li>
-<li>The Motor Driver sends a confirmation message back to the ESP32, indicating that the motor speed update was applied.</li>
+<li>The Motor Driver sends a confirmation message back to the PIC, indicating that the motor speed update was applied.</li>
 </ul>
-<h3 id="esp32-updates-the-hmi-for-user-feedback">ESP32 Updates the HMI for User Feedback</h3>
+<h3 id="7-pic-confirms-movement-and-sends-movement-data-to-wifi">7. PIC Confirms Movement and Sends Movement Data to Wifi</h3>
+<ul>
+<li>The PIC recieves mesage that motor driver has moved</li>
+<li>The PIC sends speed and movement data to Wifi ESP32 through UART to be recorded</li>
+</ul>
+<h3 id="8-esp32-updates-the-hmi-for-user-feedback">8. ESP32 Updates the HMI for User Feedback</h3>
 <ul>
 <li>The ESP32 sends real-time updates to the HMI (OLED Display), showing:</li>
 <li>Robot movement status (e.g., "Turning Left", "Going Straight").</li>
 <li>Sensor readings (e.g., "Line detected at center", "Line shifted left").</li>
 <li>Motor speed adjustments in real-time.</li>
 </ul>
-<h3 id="user-monitors-the-robots-status-on-the-hmi">User Monitors the Robot's Status on the HMI</h3>
+<h3 id="9-user-monitors-the-robots-status-on-the-hmi">9. User Monitors the Robot's Status on the HMI</h3>
 <ul>
 <li>The HMI displays live feedback about the robot’s navigation and behavior.</li>
 <li>The user can see real-time updates on how the robot is following the path.</li>
 </ul>
 <h3 id="the-process-repeats-continuously">The Process Repeats Continuously</h3>
 <ul>
-<li>The system loops from Step 2 to Step 7, ensuring the robot dynamically adjusts its speed and direction in real-time.</li>
+<li>The system loops from Step 2 to Step 9, ensuring the robot dynamically adjusts its speed and direction in real-time.</li>
 </ul>
 <h2 id="communication-protocols-used"><strong>Communication Protocols Used</strong></h2>
 <ul>
-<li>I2C Communication → Used between the ESP32, Color Sensor, and Motor Driver for real-time data exchange and control.  </li>
-<li>PWM Signals → Used internally within the Motor Driver to control motor speed and direction based on ESP32 commands.  </li>
-<li>UART Communication → Used for debugging and optional remote monitoring.  </li>
+<li>I2C Communication → Used between the ESP32 and Color Sensor for real-time data exchange and control.  </li>
+<li>SPI Signals → Used internally within the Motor Driver to control motor speed and direction based on PIC commands.  </li>
+<li>UART Communication → Used for debugging and communication between systems.  </li>
 </ul>
 <hr />
-<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-i2c-user-hmi-start-line-following-mode-hmi-andrew-activate-line-following-algorithm-andrew-david-request-line-color-data-i2c-david-zack-send-color-data-i2c-andrew-zack-adjust-speed-and-direction-i2c-zack-andrew-send-motor-status-feedback-andrew-hmi-update-robot-status-hmi-user-display-robot-path-progress-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
+<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-andrew-as-andrew-wifi-connectivity-mqtt-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
     participant Andrew as Andrew (Wifi Connectivity - MQTT)
     participant David as David (Color Sensor Subsystem - I2C)
-    participant Zack as Zack (PIC - Motor Driver - I2C)
+    participant Zack as Zack (PIC - Motor Driver - SPI)
 
     User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;Andrew: Activate Line-Following Algorithm
-    Andrew-&gt;&gt;David: Request Line Color Data (I2C)
-    David--&gt;&gt;Zack: Send Color Data (I2C)
-    Andrew-&gt;&gt;Zack: Adjust Speed and Direction (I2C)
-    Zack--&gt;&gt;Andrew: Send Motor Status Feedback
-    Andrew--&gt;&gt;HMI: Update Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress
+    HMI-&gt;&gt;David: Record Line Color Data (I2C)
+    David--&gt;&gt;Zack: Send Movement Data
+    Zack-&gt;&gt;Andrew: Update Robot Status
+    Andrew--&gt;&gt;HMI: Display Robot Status
     HMI--&gt;&gt;User: Display Robot Path Progress</code></pre></h2>
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
 <h3 id="esp32-requests-sensor-data">ESP32 Requests Sensor Data</h3>
