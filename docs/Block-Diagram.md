@@ -59,10 +59,8 @@
 - SPI Signals → Used internally within the Motor Driver to control motor speed and direction based on PIC commands.  
 - UART Communication → Used for debugging and communication between systems.  
 
-
-
-
 ---
+
 ```mermaid
 sequenceDiagram
     autonumber
@@ -79,6 +77,7 @@ sequenceDiagram
     Andrew-->>HMI: Display Robot Status
     HMI-->>User: Display Robot Path Progress
 ```
+
 ---
 
 ## **Message Structure Diagram**
