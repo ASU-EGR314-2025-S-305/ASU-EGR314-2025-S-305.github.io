@@ -888,18 +888,22 @@
 </ul>
 <h3 id="3-color-sensor-sends-data-to-esp32">3. Color Sensor Sends Data to ESP32</h3>
 <ul>
-<li>The Color Sensor detects the line position and records position data (e.g., whether the robot is:</li>
+<li>The Color Sensor detects the line position and records position data (e.g., whether the robot is:<ul>
 <li>Centered</li>
 <li>Drifting Left</li>
 <li>Drifting Right</li>
+</ul>
+</li>
 <li>The sensor sends this data back to the ESP32 over I2C.</li>
 </ul>
 <h3 id="4-esp32-processes-and-sends-data-to-pic">4. ESP32 Processes and Sends Data to PIC</h3>
 <ul>
-<li>Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:</li>
+<li>Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:<ul>
 <li>If centered, maintain speed.</li>
 <li>If drifting left, increase right motor speed and reduce left motor speed.</li>
 <li>If drifting right, increase left motor speed and reduce right motor speed.</li>
+</ul>
+</li>
 <li>The ESP32 sends the position command to the PIC with the updated speed values.</li>
 </ul>
 <h3 id="5-pic-sends-command-to-motor-drivers">5. PIC Sends Command to Motor Drivers</h3>
@@ -916,10 +920,12 @@
 </ul>
 <h3 id="8-esp32-updates-the-hmi-for-user-feedback">8. ESP32 Updates the HMI for User Feedback</h3>
 <ul>
-<li>The ESP32 sends real-time updates to the HMI (OLED Display), showing:</li>
+<li>The ESP32 sends real-time updates to the HMI (OLED Display), showing:<ul>
 <li>Robot movement status (e.g., "Turning Left", "Going Straight").</li>
 <li>Sensor readings (e.g., "Line detected at center", "Line shifted left").</li>
 <li>Motor speed adjustments in real-time.</li>
+</ul>
+</li>
 </ul>
 <h3 id="9-user-monitors-the-robots-status-on-the-hmi">9. User Monitors the Robot's Status on the HMI</h3>
 <ul>
