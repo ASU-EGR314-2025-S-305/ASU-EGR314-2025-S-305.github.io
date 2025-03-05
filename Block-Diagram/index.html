@@ -501,26 +501,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress" class="md-nav__link">
-    sequenceDiagram
-    autonumber
-    participant User
-    participant HMI as Agilan (HMI - OLED Display)
-    participant David as David (Color Sensor Subsystem - I2C)
-    participant Zack as Zack (PIC - Motor Driver - SPI)
-    participant Andrew as Andrew (Wifi Connectivity - MQTT)
-
-    User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;David: Record Line Color Data (I2C)
-    David-&gt;&gt;Zack: Send Movement Data
-    Zack-&gt;&gt;Andrew: Update Robot Status
-    Andrew--&gt;&gt;HMI: Display Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#message-structure-diagram" class="md-nav__link">
     Message Structure Diagram
   </a>
@@ -806,26 +786,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress" class="md-nav__link">
-    sequenceDiagram
-    autonumber
-    participant User
-    participant HMI as Agilan (HMI - OLED Display)
-    participant David as David (Color Sensor Subsystem - I2C)
-    participant Zack as Zack (PIC - Motor Driver - SPI)
-    participant Andrew as Andrew (Wifi Connectivity - MQTT)
-
-    User-&gt;&gt;HMI: Start Line-Following Mode
-    HMI-&gt;&gt;David: Record Line Color Data (I2C)
-    David-&gt;&gt;Zack: Send Movement Data
-    Zack-&gt;&gt;Andrew: Update Robot Status
-    Andrew--&gt;&gt;HMI: Display Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#message-structure-diagram" class="md-nav__link">
     Message Structure Diagram
   </a>
@@ -977,7 +937,7 @@
 <li>UART Communication → Used for debugging and communication between systems.  </li>
 </ul>
 <hr />
-<h2 id="sequencediagram-autonumber-participant-user-participant-hmi-as-agilan-hmi-oled-display-participant-david-as-david-color-sensor-subsystem-i2c-participant-zack-as-zack-pic-motor-driver-spi-participant-andrew-as-andrew-wifi-connectivity-mqtt-user-hmi-start-line-following-mode-hmi-david-record-line-color-data-i2c-david-zack-send-movement-data-zack-andrew-update-robot-status-andrew-hmi-display-robot-status-hmi-user-display-robot-path-progress"><pre class="mermaid"><code>sequenceDiagram
+<pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant User
     participant HMI as Agilan (HMI - OLED Display)
@@ -990,7 +950,8 @@
     David-&gt;&gt;Zack: Send Movement Data
     Zack-&gt;&gt;Andrew: Update Robot Status
     Andrew--&gt;&gt;HMI: Display Robot Status
-    HMI--&gt;&gt;User: Display Robot Path Progress</code></pre></h2>
+    HMI--&gt;&gt;User: Display Robot Path Progress</code></pre>
+<hr />
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
 <h3 id="esp32-requests-sensor-data">ESP32 Requests Sensor Data</h3>
 <ul>
