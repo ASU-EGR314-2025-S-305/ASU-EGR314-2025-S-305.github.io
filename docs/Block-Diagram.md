@@ -17,16 +17,16 @@
 
 ### 3. Color Sensor Sends Data to ESP32
 - The Color Sensor detects the line position and records position data (e.g., whether the robot is:
-  - Centered
-  - Drifting Left
-  - Drifting Right
+    - Centered
+    - Drifting Left
+    - Drifting Right
 - The sensor sends this data back to the ESP32 over I2C.
 
 ### 4. ESP32 Processes and Sends Data to PIC
 - Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:
-  - If centered, maintain speed.
-  - If drifting left, increase right motor speed and reduce left motor speed.
-  - If drifting right, increase left motor speed and reduce right motor speed.
+    - If centered, maintain speed.
+    - If drifting left, increase right motor speed and reduce left motor speed.
+    - If drifting right, increase left motor speed and reduce right motor speed.
 - The ESP32 sends the position command to the PIC with the updated speed values.
 
 ### 5. PIC Sends Command to Motor Drivers
@@ -42,9 +42,9 @@
 
 ### 8. ESP32 Updates the HMI for User Feedback
 - The ESP32 sends real-time updates to the HMI (OLED Display), showing:
-  - Robot movement status (e.g., "Turning Left", "Going Straight").
-  - Sensor readings (e.g., "Line detected at center", "Line shifted left").
-  - Motor speed adjustments in real-time.
+    - Robot movement status (e.g., "Turning Left", "Going Straight").
+    - Sensor readings (e.g., "Line detected at center", "Line shifted left").
+    - Motor speed adjustments in real-time.
 
 ### 9. User Monitors the Robot's Status on the HMI
 - The HMI displays live feedback about the robot’s navigation and behavior.
