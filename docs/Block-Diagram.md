@@ -74,7 +74,7 @@ sequenceDiagram
 
     User->>HMI: Start Line-Following Mode
     HMI->>David: Record Line Color Data (I2C)
-    David-->>Zack: Send Movement Data
+    David->>Zack: Send Movement Data
     Zack->>Andrew: Update Robot Status
     Andrew-->>HMI: Display Robot Status
     HMI-->>User: Display Robot Path Progress
