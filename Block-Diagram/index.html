@@ -563,7 +563,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-blah-balh-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-send-movement-request-0x41-esp32-pic18-color-value-0x42-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant USER
@@ -577,7 +577,7 @@
     ESP32(HMI)-&gt;&gt;ESP32(Sensor): Wake Up
     ESP32(Sensor)-&gt;&gt;Color Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
     Color Sensor--&gt;&gt;ESP32(Sensor): Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
-    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Blah Balh
+    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Send Movement Request [0x41 | ESP32 | PIC18 | Color Value | --- | 0x42]
     PIC18LF26K22-&gt;&gt;Motor Driver: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
     Motor Driver--&gt;&gt;PIC18LF26K22: Confirm Speed Update [0x41 | Motor | PIC18 | Speed Ack | --- | 0x42]
     PIC18LF26K22-&gt;&gt;ESP32(Wifi): Send Speed/Movement Data [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
@@ -873,7 +873,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-blah-balh-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status" class="md-nav__link">
+  <a href="#sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-send-movement-request-0x41-esp32-pic18-color-value-0x42-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status" class="md-nav__link">
     sequenceDiagram
     autonumber
     participant USER
@@ -887,7 +887,7 @@
     ESP32(HMI)-&gt;&gt;ESP32(Sensor): Wake Up
     ESP32(Sensor)-&gt;&gt;Color Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
     Color Sensor--&gt;&gt;ESP32(Sensor): Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
-    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Blah Balh
+    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Send Movement Request [0x41 | ESP32 | PIC18 | Color Value | --- | 0x42]
     PIC18LF26K22-&gt;&gt;Motor Driver: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
     Motor Driver--&gt;&gt;PIC18LF26K22: Confirm Speed Update [0x41 | Motor | PIC18 | Speed Ack | --- | 0x42]
     PIC18LF26K22-&gt;&gt;ESP32(Wifi): Send Speed/Movement Data [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
@@ -1056,7 +1056,7 @@
 <li>The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.</li>
 </ul>
 <hr />
-<h2 id="sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-blah-balh-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status"><pre class="mermaid"><code>sequenceDiagram
+<h2 id="sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-send-movement-request-0x41-esp32-pic18-color-value-0x42-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status"><pre class="mermaid"><code>sequenceDiagram
     autonumber
     participant USER
     participant ESP32(HMI)
@@ -1069,7 +1069,7 @@
     ESP32(HMI)-&gt;&gt;ESP32(Sensor): Wake Up
     ESP32(Sensor)-&gt;&gt;Color Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
     Color Sensor--&gt;&gt;ESP32(Sensor): Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
-    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Blah Balh
+    ESP32(Sensor)-&gt;&gt;PIC18LF26k22: Send Movement Request [0x41 | ESP32 | PIC18 | Color Value | --- | 0x42]
     PIC18LF26K22-&gt;&gt;Motor Driver: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
     Motor Driver--&gt;&gt;PIC18LF26K22: Confirm Speed Update [0x41 | Motor | PIC18 | Speed Ack | --- | 0x42]
     PIC18LF26K22-&gt;&gt;ESP32(Wifi): Send Speed/Movement Data [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
