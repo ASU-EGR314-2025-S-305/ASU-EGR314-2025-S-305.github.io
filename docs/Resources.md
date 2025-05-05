@@ -1,4 +1,6 @@
-# **Final Design/Team code**
+---
+title: Final Design/Team Code
+---
 
 ## **Overview**
 
