@@ -92,6 +92,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#reflection" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -419,6 +424,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reflection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -429,6 +447,66 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-learned" class="md-nav__link">
+    📝What we learned
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-recommendations-for-students" class="md-nav__link">
+    Future Recommendations for Students
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-architecture-version-20-reflection" class="md-nav__link">
+    📡Communication Architecture – Version 2.0 Reflection
+  </a>
+  
+    <nav class="md-nav" aria-label="📡Communication Architecture – Version 2.0 Reflection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    🛠️Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-these-changes" class="md-nav__link">
+    📈 Why These Changes?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -569,6 +647,57 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-learned" class="md-nav__link">
+    📝What we learned
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#future-recommendations-for-students" class="md-nav__link">
+    Future Recommendations for Students
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-architecture-version-20-reflection" class="md-nav__link">
+    📡Communication Architecture – Version 2.0 Reflection
+  </a>
+  
+    <nav class="md-nav" aria-label="📡Communication Architecture – Version 2.0 Reflection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    🛠️Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-these-changes" class="md-nav__link">
+    📈 Why These Changes?
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -591,9 +720,81 @@
   
 
 
-  <h1>Reflection</h1>
-
-
+<h1 id="reflection"><strong>Reflection</strong></h1>
+<h2 id="what-we-learned">📝What we learned</h2>
+<ul>
+<li>We learned that it is very difficult to get the ESP32 and PIC to communicate togther.</li>
+<li>Learning how to use micropython proficentally on VScode with the ESP32.</li>
+<li>Really understood how to read other codes.</li>
+<li>Learned how to integrate such subsystems like the MQTT,HMI,MOTOR, and SENSOR.</li>
+<li>Learned why schematic organiation and PCB layout is important.</li>
+<li>How MQTT works for lightweight wireless communication between subsystems.</li>
+<li>How to simplify user interaction with the HMI subsystem.</li>
+<li>How to use UART communication to reliably send and recieve commands between subsystems.</li>
+<li>Why clear pin management and module planning is when working with microcontrollers like the PIC and ESP32.</li>
+<li>How working in a team enhances problem-solving, especially when integrating different subsystems, code, hardware, and mechanical design.</li>
+</ul>
+<h2 id="future-recommendations-for-students"><strong>Future Recommendations for Students</strong></h2>
+<ul>
+<li>Make sure you define the right pins if you switch the pin layouts.</li>
+<li>Don't try to overcomplicate it with the code.</li>
+<li>Lectures in class are very helpful towards help for any of the subsystems.</li>
+<li>Do not fall behind on making schematics and PCBs, it is a team project.</li>
+<li>Go to office hours whenever needed, and always ask the TAs.</li>
+<li>Always try to checkup on your team just to make sure everyone is up to task.</li>
+</ul>
+<h2 id="communication-architecture-version-20-reflection">📡Communication Architecture – Version 2.0 Reflection</h2>
+<p>In a <strong>Version 2.0</strong> of our communication architecture, we would focus on improving <strong>reliability, modularity, and scalability</strong> of subsystem communication.</p>
+<h3 id="improvements">🛠️Improvements</h3>
+<ul>
+<li>
+<p><strong>Structured Protocol Format</strong><br />
+  Use a consistent message structure like:<br />
+<code>HEADER | ID | CMD | PAYLOAD | CRC</code><br />
+  This improves parsing, enables validation, and simplifies debugging.</p>
+</li>
+<li>
+<p><strong>Modular Codebase</strong><br />
+  Split the communication logic into:</p>
+</li>
+<li><code>comm_uart.py</code>: UART receive/parse functions</li>
+<li><code>comm_logic.py</code>: High-level command handling</li>
+<li>
+<p><code>main.py</code>: Application loop<br />
+  This makes it easier to test, maintain, and expand the codebase.</p>
+</li>
+<li>
+<p><strong>Enhanced Debugging</strong>  </p>
+</li>
+<li>Add verbose logs over UART or OLED (<code>"MSG RECEIVED"</code>, <code>"UNKNOWN CMD"</code>, etc.)</li>
+<li>Use debug LEDs to indicate message status or errors</li>
+<li>
+<p>Include timestamps or counters in messages for tracking</p>
+</li>
+<li>
+<p><strong>New Protocol Features</strong>  </p>
+</li>
+<li>ACK/NAK support for command confirmation</li>
+<li>Ping/heartbeat messages to verify active links</li>
+<li>
+<p>Error codes for invalid or incomplete messages</p>
+</li>
+<li>
+<p><strong>System Reliability</strong>  </p>
+</li>
+<li>Implement watchdog timers to recover from software crashes</li>
+<li>Use interrupt-based UART for consistent message reception</li>
+<li>
+<p>Add message queues or buffers to handle burst traffic</p>
+</li>
+<li>
+<p><strong>Peripheral Expansion</strong>  </p>
+</li>
+<li>Add I2C or SPI sensors with structured message handlers</li>
+<li>Explore JSON-style messaging for human-readability if memory allows</li>
+</ul>
+<h3 id="why-these-changes">📈 Why These Changes?</h3>
+<p>These improvements would make the system more robust for classroom use, easier to debug and extend, and better suited to interact with additional components like distance sensors, displays, or future subsystems.</p>
 
 
 
