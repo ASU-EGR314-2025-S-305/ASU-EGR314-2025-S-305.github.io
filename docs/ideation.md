@@ -1,4 +1,6 @@
-# **Project Ideation and Concept Generation**
+---
+title: Project Ideation and Concept Generation
+---
 
 ## **Overview**
 <div align="center">
