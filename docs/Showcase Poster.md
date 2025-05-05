@@ -2,4 +2,4 @@
 
 ![Team Poster Preview](images/poster.png)
 
-📄 [Download Full Team Poster PDF](Tposter.pdf)
+📄 [Download Full Team Poster PDF](images/Tposter.pdf)
