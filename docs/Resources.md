@@ -1,3 +1,7 @@
+# **Project Ideation and Concept Generation**
+
+## **Overview**
+
 ![Final Robot Design](images/teamcar.png)
 
 <div align="center">
