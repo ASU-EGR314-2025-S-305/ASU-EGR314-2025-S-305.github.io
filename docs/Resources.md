@@ -13,14 +13,10 @@
         allowfullscreen>
 </iframe>
 
-<br>
 Figure 1.1: A short video of our machine running and boards in place  
-<br><br>
 
 ![Final Robot Design](images/teamcar.png)  
 Figure 2.1: Our final design for the body of our robot with all the boards inside
-
-<br><br>
 
 ![Team Boards](images/boards.jpg)  
 Figure 2.2: All of our boards connected creating communication through all subsystems
