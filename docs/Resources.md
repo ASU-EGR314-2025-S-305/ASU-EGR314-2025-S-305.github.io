@@ -15,10 +15,10 @@
 
 Figure 1.1: A short video of our machine running and boards in place  
 
-![Final Robot Design](images/teamcar.png)  
+![Final Robot Design](/images/teamcar.png)  
 Figure 2.1: Our final design for the body of our robot with all the boards inside
 
-![Team Boards](images/boards.jpg)  
+![Team Boards](/images/boards.jpg)  
 Figure 2.2: All of our boards connected creating communication through all subsystems
 
 </div>
