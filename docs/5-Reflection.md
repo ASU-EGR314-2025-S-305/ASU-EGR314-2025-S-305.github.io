@@ -6,7 +6,7 @@ title: Reflection
 - We learned that it is very difficult to get the ESP32 and PIC to communicate togther.
 - Learning how to use micropython proficentally on VScode with the ESP32.
 - Really understood how to read other codes.
-- Learned how to integrate such subsystems like the MQTT, HMI, MOTOR, and SENSOR.
+- Learned how to integrate such subsystems like the mqtt, hmi, motors, and sensors.
 - Learned why schematic organiation and PCB layout is important.
 - How MQTT works for lightweight wireless communication between subsystems.
 - How to simplify user interaction with the HMI subsystem.
@@ -30,7 +30,7 @@ In a **Version 2.0** of our communication architecture, we would focus on improv
 
 - **Structured Protocol Format**  
   Use a consistent message structure like:  
-  `HEADER | ID | CMD | PAYLOAD | CRC`  
+  `Start Byte | Sender | Receiver | Data | End Byte`  
   This improves parsing, enables validation, and simplifies debugging.
 
 - **Modular Codebase**  
