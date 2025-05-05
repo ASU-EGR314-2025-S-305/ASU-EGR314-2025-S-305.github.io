@@ -2,8 +2,6 @@
 
 ## **Overview**
 
-<div align="center">
-
 <iframe width="560" height="315"
         src="https://www.youtube.com/embed/59AQpQhoQbQ?si=3Z9q4qeOMQNP5bYt"
         title="YouTube video player"
@@ -14,6 +12,8 @@
 </iframe>
 
 <p>&nbsp;</p>
+
+<div align="center">
         
 ![Final Robot Design](images/teamcar.png)  
 Figure 2.1: Our final design for the body of our robot with all the boards inside
