@@ -24,6 +24,7 @@ Figure 2.1: Our final design for the body of our robot with all the boards insid
 Figure 2.2: All of our boards connected creating communication through all subsystems
 
 </div>
+
 <p>&nbsp;</p>
 
    ## **Indvidual Codes for all Subsystems**
