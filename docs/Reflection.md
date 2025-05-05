@@ -4,7 +4,7 @@
 - We learned that it is very difficult to get the ESP32 and PIC to communicate togther.
 - Learning how to use micropython proficentally on VScode with the ESP32.
 - Really understood how to read other codes.
-- Learned how to integrate such subsystems like the MQTT,HMI,MOTOR, and SENSOR.
+- Learned how to integrate such subsystems like the MQTT, HMI, MOTOR, and SENSOR.
 - Learned why schematic organiation and PCB layout is important.
 - How MQTT works for lightweight wireless communication between subsystems.
 - How to simplify user interaction with the HMI subsystem.
