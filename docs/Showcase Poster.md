@@ -1,4 +1,6 @@
-## 🖼 Innovation Showcase Poster
+---
+title: Innovation Showcase Poster
+---
 
 ![Team Poster Preview](images/poster.png)
 
