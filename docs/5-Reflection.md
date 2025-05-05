@@ -2,7 +2,7 @@
 title: Reflection
 ---
 
-## 📝What we learned
+## What we learned
 - We learned that it is very difficult to get the ESP32 and PIC to communicate togther.
 - Learning how to use micropython proficentally on VScode with the ESP32.
 - Really understood how to read other codes.
@@ -26,7 +26,7 @@ title: Reflection
 
 In a **Version 2.0** of our communication architecture, we would focus on improving **reliability, modularity, and scalability** of subsystem communication.
 
-### 🛠️Improvements
+### Improvements
 
 - **Structured Protocol Format**  
   Use a consistent message structure like:  
@@ -59,7 +59,7 @@ In a **Version 2.0** of our communication architecture, we would focus on improv
   - Add I2C or SPI sensors with structured message handlers
   - Explore JSON-style messaging for human-readability if memory allows
 
-### 📈 Why These Changes?
+### Why These Changes?
 
 These improvements would make the system more robust for classroom use, easier to debug and extend, and better suited to interact with additional components like distance sensors, displays, or future subsystems.
 
