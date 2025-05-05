@@ -48,5 +48,5 @@ Figure 2.2: All of our boards connected creating communication through all subsy
    ## **Motor/Motor Driver**
 
   ## **SolidWorks Files**
-  - [Download CAD Files.zip](resources/BoardHolder(1).SLDPRT.zip)
+  - [Download CAD Files.zip](images/boardhol3.pdf)
    
