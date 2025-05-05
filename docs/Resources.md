@@ -11,20 +11,18 @@
         allowfullscreen>
 </iframe>
 
-<p style="text-align: center;"><em>Figure 1.1: A short video of our machine running and boards in place</em></p>
+![Final Robot Design](images/teamcar.png)
+
+<div align="center">
+Figure 2.1: Our final design for the body of our robot with all the boards inside
+</div>
 
 <p>&nbsp;</p>
 
+![Team Boards](images/boards.jpg)
+
 <div align="center">
-
-  <img src="images/teamcar.png" alt="Final Robot Design" width="600"><br>
-  Figure 2.1: Our final design for the body of our robot with all the boards inside
-
-  <p>&nbsp;</p>
-
-  <img src="images/boards.jpg" alt="Team Boards" width="600"><br>
-  Figure 2.2: All of our boards connected creating communication through all subsystems
-
+Figure 2.2: All of our boards connected creating communication through all subsystems
 </div>
 
 <p>&nbsp;</p>
