@@ -11,18 +11,15 @@
         allowfullscreen>
 </iframe>
 
-
-![Final Robot Design](images/teamcar.png)
-
 <div align="center">
 
-   Figure 2.1: Our final design for the body of our robot with all the boards inside
+![Final Robot Design](images/teamcar.png)  
+Figure 2.1: Our final design for the body of our robot with all the boards inside
 
-![Team Boards](images/boards.jpg)
+![Team Boards](images/boards.jpg)  
+Figure 2.2: All of our boards connected creating communication through all subsystems
 
-<div align="center">
-
-   Figure 2.2: All of our boards connected creating communication through all subsystems
+</div>
 
    ## **Indvidual Codes for all Subsystems**
 
