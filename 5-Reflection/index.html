@@ -635,7 +635,7 @@
 <li>We learned that it is very difficult to get the ESP32 and PIC to communicate togther.</li>
 <li>Learning how to use micropython proficentally on VScode with the ESP32.</li>
 <li>Really understood how to read other codes.</li>
-<li>Learned how to integrate such subsystems like the MQTT, HMI, MOTOR, and SENSOR.</li>
+<li>Learned how to integrate such subsystems like the mqtt, hmi, motors, and sensors.</li>
 <li>Learned why schematic organiation and PCB layout is important.</li>
 <li>How MQTT works for lightweight wireless communication between subsystems.</li>
 <li>How to simplify user interaction with the HMI subsystem.</li>
@@ -659,7 +659,7 @@
 <li>
 <p><strong>Structured Protocol Format</strong><br />
   Use a consistent message structure like:<br />
-<code>HEADER | ID | CMD | PAYLOAD | CRC</code><br />
+<code>Start Byte | Sender | Receiver | Data | End Byte</code><br />
   This improves parsing, enables validation, and simplifies debugging.</p>
 </li>
 <li>
