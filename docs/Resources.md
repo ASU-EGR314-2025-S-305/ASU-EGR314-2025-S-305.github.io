@@ -19,11 +19,13 @@
 
    ## **MQTT**
 
-
    ## **Color Sensor**
 
-
    ## **HMI**
-
+- [Download HMI_ESP32_Code.zip](resources/code_esp32_oled-main2.zip)
 
    ## **Motor/Motor Driver**
+
+  ## **SolidWorks Files**
+  - [Download CAD Files.zip](resources/BoardHolder(1).SLDPRT.zip)
+   
