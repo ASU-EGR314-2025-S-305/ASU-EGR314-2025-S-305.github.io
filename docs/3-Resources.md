@@ -43,7 +43,7 @@ Figure 2.2: All of our boards connected creating communication through all subsy
    ## **Color Sensor**
 
    ## **HMI**
-- [Agilan's site](resources/code_esp32_oled-main2.zip)
+- [Agilan's site](images/AKcode.pdf)
 
    ## **Motor/Motor Driver**
 
