@@ -14,6 +14,8 @@ title: Reflection
 - Why clear pin management and module planning is when working with microcontrollers like the PIC and ESP32.
 - How working in a team enhances problem-solving, especially when integrating different subsystems, code, hardware, and mechanical design.
 
+---
+
 ## **Future Recommendations for Students**
 - Make sure you define the right pins if you switch the pin layouts.
 - Don't try to overcomplicate it with the code.
@@ -21,6 +23,8 @@ title: Reflection
 - Do not fall behind on making schematics and PCBs, it is a team project.
 - Go to office hours whenever needed, and always ask the TAs.
 - Always try to checkup on your team just to make sure everyone is up to task.
+
+---
 
 ## 📡Communication Architecture – Version 2.0 Reflection
 
