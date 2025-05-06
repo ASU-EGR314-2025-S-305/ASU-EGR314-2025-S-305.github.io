@@ -17,6 +17,7 @@ tags:
 
 ## Summary
 ![FinalProduct](images/teamcar.png)
+
 Our project focused on creating an integrated system where independent subsystems worked together through UART communication to perform a sequence of automated tasks. At the core of the design was a color sensor that detected either red or blue light. Once a color was identified, this information was transmitted via UART to a microcontroller, which then sent the data to an MQTT server. The server acted as a central hub, storing the color data and using it to determine the appropriate response. Based on the color detected, the server relayed a command over UARTto control a motor’s movement.
 
 The motor, upon receiving the command, responded by adjusting its speed accordingly. This speed data was then sent back through UART to the microcontroller and forwarded to a Human-Machine Interface (HMI), where it was displayed for users to monitor in real time. Each part of the system, the color sensor, MQTT server, motor driver, and HMI, operated as its own functional unit, but ccummunicated through a fixed UART communication structure. This ensured reliable data exchange and coordination across the system, allowing for smooth automation from sensor input to motor control and visual feedback.
