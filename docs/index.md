@@ -15,6 +15,12 @@ tags:
 
 ---
 
+## Summary
+![FinalProduct](images/teamcar.png)
+Our project focused on creating an integrated system where independent subsystems worked together through UART communication to perform a sequence of automated tasks. At the core of the design was a color sensor that detected either red or blue light. Once a color was identified, this information was transmitted via UART to a microcontroller, which then sent the data to an MQTT server. The server acted as a central hub, storing the color data and using it to determine the appropriate response. Based on the color detected, the server relayed a command over UARTto control a motor’s movement.
+
+The motor, upon receiving the command, responded by adjusting its speed accordingly. This speed data was then sent back through UART to the microcontroller and forwarded to a Human-Machine Interface (HMI), where it was displayed for users to monitor in real time. Each part of the system, the color sensor, MQTT server, motor driver, and HMI, operated as its own functional unit, but ccummunicated through a fixed UART communication structure. This ensured reliable data exchange and coordination across the system, allowing for smooth automation from sensor input to motor control and visual feedback.
+
 ## **Introduction**
 
 Our team is dedicated to creating an innovative and impactful STEM-themed project that demonstrates technical skills, teamwork, and creativity while contributing to the development of interactive educational tools for K-12 students. By focusing on modularity, interactivity, and industry-standard practices, we aim to deliver a high-quality system that inspires curiosity and excitement for STEM concepts. Through collaborative effort and individual contributions, we seek to design, build, and document a professional-grade modular system that adheres to UART daisy chain communication protocols and supports future scalability. This report outlines our team’s charter, goals, objectives, communication strategies, and responsibilities, all of which are aligned to ensure the success of our project and the professional growth of our team members. By fostering a positive and productive team environment, we strive to achieve excellence in both the technical and educational aspects of our project.
