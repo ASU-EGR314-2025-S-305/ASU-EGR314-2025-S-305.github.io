@@ -528,50 +528,57 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#esp32-requests-sensor-data" class="md-nav__link">
-    ESP32 Requests Sensor Data
+  <a href="#sensor-sends-stop-command-to-mqtt" class="md-nav__link">
+    Sensor Sends Stop Command to MQTT
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#color-sensor-responds-to-esp32" class="md-nav__link">
-    Color Sensor Responds to ESP32
+  <a href="#mqtt-relays-command-to-motor-system" class="md-nav__link">
+    MQTT Relays Command to Motor System
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-sends-line-data-to-pic18" class="md-nav__link">
-    ESP32 Sends Line Data to PIC18
+  <a href="#mqtt-sends-timed-go-command" class="md-nav__link">
+    MQTT Sends Timed Go Command
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pic18-gives-motor-driver-movement-command" class="md-nav__link">
-    PIC18 gives Motor Driver Movement Command
+  <a href="#mqtt-rewrites-receiver-for-loop-detection" class="md-nav__link">
+    MQTT Rewrites Receiver for Loop Detection
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pic18-sends-status-update-to-hmi" class="md-nav__link">
-    PIC18 Sends Status Update to HMI
+  <a href="#hmi-displays-state-based-on-uart" class="md-nav__link">
+    HMI Displays State Based on UART
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hmi-displays-robot-status-to-the-user" class="md-nav__link">
-    HMI Displays Robot Status to the User
+  <a href="#mqtt-publishes-state-to-mqtt-broker" class="md-nav__link">
+    MQTT Publishes State to MQTT Broker
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously" class="md-nav__link">
-    The Process Repeats Continuously
+  <a href="#sensor-fallback-uses-mqtt-to-receive-messages" class="md-nav__link">
+    Sensor Fallback Uses MQTT to Receive Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-system-loops-continuously" class="md-nav__link">
+    The System Loops Continuously
   </a>
   
 </li>
@@ -787,50 +794,57 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#esp32-requests-sensor-data" class="md-nav__link">
-    ESP32 Requests Sensor Data
+  <a href="#sensor-sends-stop-command-to-mqtt" class="md-nav__link">
+    Sensor Sends Stop Command to MQTT
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#color-sensor-responds-to-esp32" class="md-nav__link">
-    Color Sensor Responds to ESP32
+  <a href="#mqtt-relays-command-to-motor-system" class="md-nav__link">
+    MQTT Relays Command to Motor System
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#esp32-sends-line-data-to-pic18" class="md-nav__link">
-    ESP32 Sends Line Data to PIC18
+  <a href="#mqtt-sends-timed-go-command" class="md-nav__link">
+    MQTT Sends Timed Go Command
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pic18-gives-motor-driver-movement-command" class="md-nav__link">
-    PIC18 gives Motor Driver Movement Command
+  <a href="#mqtt-rewrites-receiver-for-loop-detection" class="md-nav__link">
+    MQTT Rewrites Receiver for Loop Detection
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#pic18-sends-status-update-to-hmi" class="md-nav__link">
-    PIC18 Sends Status Update to HMI
+  <a href="#hmi-displays-state-based-on-uart" class="md-nav__link">
+    HMI Displays State Based on UART
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#hmi-displays-robot-status-to-the-user" class="md-nav__link">
-    HMI Displays Robot Status to the User
+  <a href="#mqtt-publishes-state-to-mqtt-broker" class="md-nav__link">
+    MQTT Publishes State to MQTT Broker
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously" class="md-nav__link">
-    The Process Repeats Continuously
+  <a href="#sensor-fallback-uses-mqtt-to-receive-messages" class="md-nav__link">
+    Sensor Fallback Uses MQTT to Receive Messages
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-system-loops-continuously" class="md-nav__link">
+    The System Loops Continuously
   </a>
   
 </li>
@@ -985,47 +999,59 @@
     HMI--&gt;&gt;User: Display Robot Path Progress</code></pre>
 <hr />
 <h2 id="message-structure-diagram"><strong>Message Structure Diagram</strong></h2>
-<h3 id="esp32-requests-sensor-data">ESP32 Requests Sensor Data</h3>
+<h3 id="sensor-sends-stop-command-to-mqtt">Sensor Sends Stop Command to MQTT</h3>
 <ul>
-<li>The ESP32 sends an I2C request to the Color Sensor.</li>
-<li>The request follows the format:<br />
-<code>[0x41 | Source: ESP32 | Destination: Sensor | Read Color Command | End Byte: 0x42]</code></li>
+<li>When the Sensor ESP32 detects red or blue, it sends a stop message over UART.</li>
+<li>Message format:<br />
+<code>[0x41 | Source: 0x01 (Sensor) | Destination: 0x04 (MQTT) | Data: 0x64 or 0x65 | 0x42]</code></li>
 </ul>
-<h3 id="color-sensor-responds-to-esp32">Color Sensor Responds to ESP32</h3>
+<h3 id="mqtt-relays-command-to-motor-system">MQTT Relays Command to Motor System</h3>
 <ul>
-<li>The Color Sensor reads the line position and sends the data back to the ESP32.</li>
-<li>The response format:<br />
-<code>[0x41 | Source: Sensor | Destination: ESP32 | Color Value | End Byte: 0x42]</code></li>
+<li>The MQTT ESP32 validates the message and enters a lockout period.</li>
+<li>It sends a stop command to the Motor subsystem.</li>
+<li>Message format:<br />
+<code>[0x41 | Source: 0x04 (MQTT) | Destination: 0x05 (Motor) | Data: 0x00 | 0x42]</code></li>
 </ul>
-<h3 id="esp32-sends-line-data-to-pic18">ESP32 Sends Line Data to PIC18</h3>
+<h3 id="mqtt-sends-timed-go-command">MQTT Sends Timed Go Command</h3>
 <ul>
-<li>Based on the sensor data, the ESP32 calculates the required motor speed and direction adjustments.</li>
-<li>The ESP32 sends an I2C command to the Motor Driver with the new speed settings.</li>
-<li>The message format:<br />
-<code>[0x41 | Source: ESP32 | Destination: PIC18 | Speed Value | End Byte: 0x42]</code></li>
+<li>After the stop period ends, the MQTT subsystem sends a go command.</li>
+<li>Message format:<br />
+<code>[0x41 | Source: 0x04 (MQTT) | Destination: 0x05 (Motor) | Data: 0x01 | 0x42]</code></li>
 </ul>
-<h3 id="pic18-gives-motor-driver-movement-command">PIC18 gives Motor Driver Movement Command</h3>
+<h3 id="mqtt-rewrites-receiver-for-loop-detection">MQTT Rewrites Receiver for Loop Detection</h3>
 <ul>
-<li>The Motor Driver processes the command and adjusts the wheel speed.</li>
-<li>The Motor Driver then sends a confirmation message back to the ESP32.</li>
-<li>The confirmation format:<br />
-<code>[0x41 | Source: PIC18 | Destination: Motor Driver | Speed Ack | End Byte: 0x42]</code></li>
+<li>When MQTT receives a valid message not intended for itself, it <strong>modifies the receiver byte to 0x04</strong> before forwarding.</li>
+<li>This marks that the message has looped through the system once and allows MQTT to terminate it if seen again.</li>
+<li>Original message:<br />
+<code>[0x41 | Source: 0x03 | Destination: 0x05 | Data: X | 0x42]</code><br />
+  Forwarded message:<br />
+<code>[0x41 | Source: 0x03 | Destination: 0x04 | Data: X | 0x42]</code></li>
 </ul>
-<h3 id="pic18-sends-status-update-to-hmi">PIC18 Sends Status Update to HMI</h3>
+<h3 id="hmi-displays-state-based-on-uart">HMI Displays State Based on UART</h3>
 <ul>
-<li>The ESP32 sends real-time status updates to the HMI.</li>
-<li>The HMI displays the current status (e.g., robot speed, direction, sensor readings).</li>
-<li>The message format:<br />
-<code>[0x41 | Source: PIC18 | Destination: HMI | Status Data | End Byte: 0x42]</code></li>
+<li>The HMI ESP32 receives messages from MQTT via UART and updates the OLED display.</li>
+<li>Message format:<br />
+<code>[0x41 | Source: 0x04 (MQTT) | Destination: 0x03 (HMI) | Data: 0x00 or 0x01 | 0x42]</code></li>
 </ul>
-<h3 id="hmi-displays-robot-status-to-the-user">HMI Displays Robot Status to the User</h3>
+<h3 id="mqtt-publishes-state-to-mqtt-broker">MQTT Publishes State to MQTT Broker</h3>
 <ul>
-<li>The HMI receives the status update and displays live feedback on the screen.</li>
-<li>The user can monitor how the robot is navigating based on sensor input and speed adjustments.</li>
+<li>MQTT also publishes state updates to the broker for remote visualization and fallback usage.</li>
+<li>Topics and values include:</li>
+<li><code>car/state</code>: <code>"0"</code> (stop) or <code>"1"</code> (go)</li>
+<li><code>counter/terminated</code>: Number of terminated messages</li>
+<li><code>counter/redundant</code>: Number of filtered repeated messages</li>
 </ul>
-<h3 id="the-process-repeats-continuously">The Process Repeats Continuously</h3>
+<h3 id="sensor-fallback-uses-mqtt-to-receive-messages">Sensor Fallback Uses MQTT to Receive Messages</h3>
 <ul>
-<li>The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.</li>
+<li>If UART communication with the HMI fails, the Sensor switches to fallback mode and receives control messages from MQTT.</li>
+<li>Fallback message example:<br />
+<code>[0x41 | Source: 0x03 (HMI) | Destination: 0x01 (Sensor) | Data: 0x00 or 0x01 | 0x42]</code></li>
+</ul>
+<h3 id="the-system-loops-continuously">The System Loops Continuously</h3>
+<ul>
+<li>The Sensor continues monitoring for color.</li>
+<li>MQTT coordinates message flow and filtering.</li>
+<li>HMI reflects current movement status.</li>
 </ul>
 <hr />
 <h2 id="sequencediagram-autonumber-participant-user-participant-esp32hmi-participant-esp32sensor-participant-color-sensor-participant-pic18lf26k22-participant-motor-driver-participant-esp32wifi-esp32hmi-esp32sensor-wake-up-esp32sensor-color-sensor-request-line-color-data-0x41-esp32-sensor-read-color-0x42-color-sensor-esp32sensor-send-line-color-data-0x41-sensor-esp32-color-value-0x42-esp32sensor-pic18lf26k22-send-movement-request-0x41-esp32-pic18-color-value-0x42-pic18lf26k22-motor-driver-adjust-speed-0x41-esp32-motor-speed-value-0x42-motor-driver-pic18lf26k22-confirm-speed-update-0x41-motor-pic18-speed-ack-0x42-pic18lf26k22-esp32wifi-send-speedmovement-data-0x41-motor-esp32-speed-ack-0x42-esp32wifi-esp32hmi-send-status-update-0x41-esp32-hmi-status-data-0x42-esp32hmi-user-display-robot-status"><pre class="mermaid"><code>sequenceDiagram
