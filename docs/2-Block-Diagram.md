@@ -163,19 +163,18 @@ sequenceDiagram
     participant ESP32(HMI)
     participant ESP32(Sensor)
     participant Color Sensor
+    participant ESP32(Wifi)
     participant PIC18LF26K22
     participant Motor Driver
-    participant ESP32(Wifi)
-
+    
     ESP32(HMI)->>ESP32(Sensor): Wake Up
     ESP32(Sensor)->>Color Sensor: Request Line Color Data [0x41 | ESP32 | Sensor | Read Color | --- | 0x42]
-    Color Sensor-->>ESP32(Sensor): Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
-    ESP32(Sensor)->>PIC18LF26K22: Send Movement Request [0x41 | ESP32 | PIC18 | Color Value | --- | 0x42]
+    Color Sensor-->>ESP32(Sensor): Retrieve Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
+    ESP32(Sensor)->>ESP32(Wifi): Send Line Color Data [0x41 | Sensor | ESP32 | Color Value | --- | 0x42]
+    ESP32(Wifi)->>PIC18LF26K22: Send Movement Request [0x41 | ESP32 | PIC18 | Color Value | --- | 0x42]
     PIC18LF26K22->>Motor Driver: Adjust Speed [0x41 | ESP32 | Motor | Speed Value | --- | 0x42]
     Motor Driver-->>PIC18LF26K22: Confirm Speed Update [0x41 | Motor | PIC18 | Speed Ack | --- | 0x42]
-    PIC18LF26K22->>ESP32(Wifi): Send Speed/Movement Data [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
-    ESP32(Wifi)->>ESP32(HMI): Send Status Update [0x41 | ESP32 | HMI | Status Data | --- | 0x42]
+    PIC18LF26K22->>ESP32(HMI): Send Speed/Movement Data [0x41 | Motor | ESP32 | Speed Ack | --- | 0x42]
     ESP32(HMI)->>USER: Display Robot Status
 ```
 ---
-[Enlarged Sequence Diagram](images/Sequence_Diagram.pdf)
