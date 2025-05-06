@@ -93,7 +93,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sequence-diagram" class="md-skip">
+        <a href="#final-communication-sequence" class="md-skip">
           Skip to content
         </a>
       
@@ -437,79 +437,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sequence-diagram" class="md-nav__link">
-    Sequence Diagram
+  <a href="#final-communication-sequence" class="md-nav__link">
+    Final Communication Sequence
   </a>
   
-    <nav class="md-nav" aria-label="Sequence Diagram">
+    <nav class="md-nav" aria-label="Final Communication Sequence">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-user-starts-the-robot" class="md-nav__link">
-    1. User Starts the Robot
+  <a href="#1-user-powers-on-the-system" class="md-nav__link">
+    1. User Powers On the System
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-esp32-requests-color-sensor-data" class="md-nav__link">
-    2. ESP32 Requests Color Sensor Data
+  <a href="#2-sensor-subsystem-monitors-for-color" class="md-nav__link">
+    2. Sensor Subsystem Monitors for Color
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-color-sensor-sends-data-to-esp32" class="md-nav__link">
-    3. Color Sensor Sends Data to ESP32
+  <a href="#3-uart-message-reaches-the-mqtt-subsystem" class="md-nav__link">
+    3. UART Message Reaches the MQTT Subsystem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-esp32-processes-and-sends-data-to-pic" class="md-nav__link">
-    4. ESP32 Processes and Sends Data to PIC
+  <a href="#4-mqtt-triggers-a-timed-restart" class="md-nav__link">
+    4. MQTT Triggers a Timed Restart
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-pic-sends-command-to-motor-drivers" class="md-nav__link">
-    5. PIC Sends Command to Motor Drivers
+  <a href="#5-hmi-receives-and-displays-movement-status" class="md-nav__link">
+    5. HMI Receives and Displays Movement Status
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-motor-driver-executes-speed-adjustments" class="md-nav__link">
-    6. Motor Driver Executes Speed Adjustments
+  <a href="#6-sensor-fallback-if-uart-to-hmi-fails" class="md-nav__link">
+    6. Sensor Fallback if UART to HMI Fails
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-pic-confirms-movement-and-sends-movement-data-to-wifi" class="md-nav__link">
-    7. PIC Confirms Movement and Sends Movement Data to Wifi
+  <a href="#7-mqtt-logs-system-behavior" class="md-nav__link">
+    7. MQTT Logs System Behavior
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
-    8. ESP32 Updates the HMI for User Feedback
+  <a href="#message-structure-and-design-process" class="md-nav__link">
+    Message Structure and Design Process
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
-    9. User Monitors the Robot's Status on the HMI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously" class="md-nav__link">
-    The Process Repeats Continuously
+  <a href="#top-5-software-design-changes" class="md-nav__link">
+    Top 5 Software Design Changes
   </a>
   
 </li>
@@ -577,7 +570,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously_1" class="md-nav__link">
+  <a href="#the-process-repeats-continuously" class="md-nav__link">
     The Process Repeats Continuously
   </a>
   
@@ -703,79 +696,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sequence-diagram" class="md-nav__link">
-    Sequence Diagram
+  <a href="#final-communication-sequence" class="md-nav__link">
+    Final Communication Sequence
   </a>
   
-    <nav class="md-nav" aria-label="Sequence Diagram">
+    <nav class="md-nav" aria-label="Final Communication Sequence">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-user-starts-the-robot" class="md-nav__link">
-    1. User Starts the Robot
+  <a href="#1-user-powers-on-the-system" class="md-nav__link">
+    1. User Powers On the System
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-esp32-requests-color-sensor-data" class="md-nav__link">
-    2. ESP32 Requests Color Sensor Data
+  <a href="#2-sensor-subsystem-monitors-for-color" class="md-nav__link">
+    2. Sensor Subsystem Monitors for Color
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-color-sensor-sends-data-to-esp32" class="md-nav__link">
-    3. Color Sensor Sends Data to ESP32
+  <a href="#3-uart-message-reaches-the-mqtt-subsystem" class="md-nav__link">
+    3. UART Message Reaches the MQTT Subsystem
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#4-esp32-processes-and-sends-data-to-pic" class="md-nav__link">
-    4. ESP32 Processes and Sends Data to PIC
+  <a href="#4-mqtt-triggers-a-timed-restart" class="md-nav__link">
+    4. MQTT Triggers a Timed Restart
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#5-pic-sends-command-to-motor-drivers" class="md-nav__link">
-    5. PIC Sends Command to Motor Drivers
+  <a href="#5-hmi-receives-and-displays-movement-status" class="md-nav__link">
+    5. HMI Receives and Displays Movement Status
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-motor-driver-executes-speed-adjustments" class="md-nav__link">
-    6. Motor Driver Executes Speed Adjustments
+  <a href="#6-sensor-fallback-if-uart-to-hmi-fails" class="md-nav__link">
+    6. Sensor Fallback if UART to HMI Fails
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#7-pic-confirms-movement-and-sends-movement-data-to-wifi" class="md-nav__link">
-    7. PIC Confirms Movement and Sends Movement Data to Wifi
+  <a href="#7-mqtt-logs-system-behavior" class="md-nav__link">
+    7. MQTT Logs System Behavior
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#8-esp32-updates-the-hmi-for-user-feedback" class="md-nav__link">
-    8. ESP32 Updates the HMI for User Feedback
+  <a href="#message-structure-and-design-process" class="md-nav__link">
+    Message Structure and Design Process
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#9-user-monitors-the-robots-status-on-the-hmi" class="md-nav__link">
-    9. User Monitors the Robot's Status on the HMI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously" class="md-nav__link">
-    The Process Repeats Continuously
+  <a href="#top-5-software-design-changes" class="md-nav__link">
+    Top 5 Software Design Changes
   </a>
   
 </li>
@@ -843,7 +829,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-process-repeats-continuously_1" class="md-nav__link">
+  <a href="#the-process-repeats-continuously" class="md-nav__link">
     The Process Repeats Continuously
   </a>
   
@@ -909,68 +895,73 @@
 <script type="text/javascript" src="https://viewer.diagrams.net/js/viewer-static.min.js"></script>
 
 <p><a href="images/EGR314TeamBlockDiagram.drawio.pdf">Block Diagram PDF</a></p>
-<h2 id="sequence-diagram"><strong>Sequence Diagram</strong></h2>
-<h3 id="1-user-starts-the-robot">1. User Starts the Robot</h3>
+<h2 id="final-communication-sequence">Final Communication Sequence</h2>
+<h3 id="1-user-powers-on-the-system">1. User Powers On the System</h3>
 <ul>
-<li>The user interacts with the HMI to power on robot out of sleep, and enable line-following mode.</li>
-<li>The HMI sends a command to the ESP32 to activate the system.</li>
+<li>Each microcontroller (Sensor, HMI, Motor, MQTT) powers on individually.  </li>
+<li>Subsystems begin listening on UART and prepare for message exchange.</li>
 </ul>
-<h3 id="2-esp32-requests-color-sensor-data">2. ESP32 Requests Color Sensor Data</h3>
+<h3 id="2-sensor-subsystem-monitors-for-color">2. Sensor Subsystem Monitors for Color</h3>
 <ul>
-<li>The ESP32 sends an I2C request to the Color Sensor to read the line position.</li>
+<li>The Sensor ESP32 continuously polls the I2C color sensor.  </li>
+<li>When it detects red or blue, it determines a stop event has occurred.  </li>
+<li>It sends a 5-byte stop message (<code>0x64</code> or <code>0x65</code>) over UART.</li>
 </ul>
-<h3 id="3-color-sensor-sends-data-to-esp32">3. Color Sensor Sends Data to ESP32</h3>
+<h3 id="3-uart-message-reaches-the-mqtt-subsystem">3. UART Message Reaches the MQTT Subsystem</h3>
 <ul>
-<li>The Color Sensor detects the line position and records position data (e.g., whether the robot is:<ul>
-<li>Centered</li>
-<li>Drifting Left</li>
-<li>Drifting Right</li>
+<li>The MQTT ESP32 receives the message, verifies its structure, and detects it as a valid stop trigger.  </li>
+<li>MQTT logs the event and initiates a lockout period to prevent redundant triggers.  </li>
+<li>MQTT sends a standardized stop command (<code>0x00</code>) over UART to the motor system and publishes <code>car/state = 0</code> to MQTT.</li>
 </ul>
+<h3 id="4-mqtt-triggers-a-timed-restart">4. MQTT Triggers a Timed Restart</h3>
+<ul>
+<li>After a 5-second stop period, the MQTT system sends a go message (<code>0x01</code>) over UART.  </li>
+<li>It also publishes <code>car/state = 1</code> to the MQTT broker.  </li>
+<li>This ensures coordinated restart of movement.</li>
+</ul>
+<h3 id="5-hmi-receives-and-displays-movement-status">5. HMI Receives and Displays Movement Status</h3>
+<ul>
+<li>The HMI ESP32 listens over UART for stop (<code>0x00</code>) or go (<code>0x01</code>) messages.  </li>
+<li>It updates its OLED display with a large X (stop) or upward arrow (go).  </li>
+<li>It also subscribes to <code>car/state</code> over MQTT as a fallback if UART fails.</li>
+</ul>
+<h3 id="6-sensor-fallback-if-uart-to-hmi-fails">6. Sensor Fallback if UART to HMI Fails</h3>
+<ul>
+<li>If no UART messages are received from the HMI after 15 seconds, the Sensor board enables MQTT fallback mode.  </li>
+<li>It listens for relayed messages from the HMI over MQTT and continues normal operation.</li>
+</ul>
+<h3 id="7-mqtt-logs-system-behavior">7. MQTT Logs System Behavior</h3>
+<ul>
+<li>The MQTT system tracks terminated and filtered messages.  </li>
+<li>It publishes data to the broker for analysis (e.g., <code>counter/terminated</code>, <code>counter/redundant</code>).  </li>
+<li>A Python script running on the local computer visualizes this in real time via Matplotlib.</li>
+</ul>
+<h3 id="message-structure-and-design-process">Message Structure and Design Process</h3>
+<p>Our team designed a 5-byte UART message structure consisting of a Start Byte, Sender ID, Receiver ID, Data Byte, and End Byte. This provided a consistent framework for message formatting and error checking across subsystems. The original intent was to use the Sender and Receiver IDs for targeted delivery and basic validation, but as our system evolved, we began to use these fields in more flexible and functional ways.</p>
+<p>Most notably, we implemented a system-wide method of detecting when a message had already traveled around the entire UART chain. When a message was first received by the MQTT system, we altered its Receiver byte from its original value to <code>0x04</code>. Since all messages pass through each board in the UART loop, when a board later received a message already tagged with <code>Receiver = 0x04</code>, we could safely assume it had completed one full trip through the network and could now be terminated. This mechanism provided a simple but robust way to eliminate redundant or looping messages without the need for message tracking or UUIDs, simplifying the logic for all subsystems.</p>
+<h3 id="top-5-software-design-changes">Top 5 Software Design Changes</h3>
+<ol>
+<li>
+<p><strong>MQTT Backup System</strong><br />
+   Initially, we designed the system to rely solely on UART for communication. However, as we progressed, we implemented a robust MQTT backup that activates if a UART timeout occurs on the Sensor subsystem. When UART fails, the Sensor subscribes to the HMI's MQTT topic and resumes communication via MQTT instead of UART. This fallback system ensured our communication architecture remained functional and resilient even during partial subsystem failures.</p>
 </li>
-<li>The sensor sends this data back to the ESP32 over I2C.</li>
-</ul>
-<h3 id="4-esp32-processes-and-sends-data-to-pic">4. ESP32 Processes and Sends Data to PIC</h3>
-<ul>
-<li>Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:<ul>
-<li>If centered, maintain speed.</li>
-<li>If drifting left, increase right motor speed and reduce left motor speed.</li>
-<li>If drifting right, increase left motor speed and reduce right motor speed.</li>
-</ul>
+<li>
+<p><strong>Repeat Message Filtering + Graph Output</strong><br />
+   We added logic to filter repeated stop messages at the MQTT system level, preventing the car from being retriggered by redundant sensor input. A 2-second lockout followed each valid stop event. We also tracked the number of filtered messages and exposed that information through MQTT topics so that a Python-based local graphing utility could visualize system behavior in real time. This gave us a powerful debugging and feedback mechanism for observing system stability and message traffic.</p>
 </li>
-<li>The ESP32 sends the position command to the PIC with the updated speed values.</li>
-</ul>
-<h3 id="5-pic-sends-command-to-motor-drivers">5. PIC Sends Command to Motor Drivers</h3>
-<ul>
-<li>The PIC recieves the command to move from the ESP32 and speaks to the motor drivers over SPI</li>
-</ul>
-<h3 id="6-motor-driver-executes-speed-adjustments">6. Motor Driver Executes Speed Adjustments</h3>
-<ul>
-<li>The Motor Driver processes the speed and direction commands and adjusts the motors accordingly.  </li>
-<li>The Motor Driver sends a confirmation message back to the PIC, indicating that the motor speed update was applied.</li>
-</ul>
-<h3 id="7-pic-confirms-movement-and-sends-movement-data-to-wifi">7. PIC Confirms Movement and Sends Movement Data to Wifi</h3>
-<ul>
-<li>The PIC recieves mesage that motor driver has moved</li>
-<li>The PIC sends speed and movement data to Wifi ESP32 through UART to be recorded</li>
-</ul>
-<h3 id="8-esp32-updates-the-hmi-for-user-feedback">8. ESP32 Updates the HMI for User Feedback</h3>
-<ul>
-<li>The ESP32 sends real-time updates to the HMI (OLED Display), showing:<ul>
-<li>Robot movement status (e.g., "Turning Left", "Going Straight").</li>
-<li>Sensor readings (e.g., "Line detected at center", "Line shifted left").</li>
-<li>Motor speed adjustments in real-time.</li>
-</ul>
+<li>
+<p><strong>Receiver ID Modification for Message Termination</strong><br />
+   We added a mechanism in the MQTT subsystem to change the Receiver ID of a message to <code>0x04</code> once it had been processed. When any subsystem later receives a message with <code>Receiver = 0x04</code>, it knows that message has already traveled through the system once and terminates it instead of forwarding. This design change allowed us to eliminate message loops without requiring per-board message history tracking and helped the MQTT system act as a central filter without additional memory overhead.</p>
 </li>
-</ul>
-<h3 id="9-user-monitors-the-robots-status-on-the-hmi">9. User Monitors the Robot's Status on the HMI</h3>
-<ul>
-<li>The HMI displays live feedback about the robot’s navigation and behavior.</li>
-<li>The user can see real-time updates on how the robot is following the path.</li>
-</ul>
-<h3 id="the-process-repeats-continuously">The Process Repeats Continuously</h3>
-<ul>
-<li>The system loops from Step 2 to Step 9, ensuring the robot dynamically adjusts its speed and direction in real-time.</li>
-</ul>
+<li>
+<p><strong>Message Simplification</strong><br />
+   Originally, we used separate messages to indicate each type of stop or color trigger. We simplified this into a streamlined structure where the sensor sends either <code>0x64</code> or <code>0x65</code> for red or blue, both of which are treated identically as stop commands. The MQTT system receives this, then sends a <code>0x00</code> message down the line to stop the car, waits for a timer to expire, and sends a <code>0x01</code> to resume movement. This design simplified downstream logic and centralized stop/go timing into the MQTT system, improving consistency and reliability.</p>
+</li>
+<li>
+<p><strong>HMI Simplification</strong><br />
+   Our original plan for the HMI system involved displaying detailed information based on incoming UART messages, such as color, sender ID, or command type. However, we found this to be unnecessarily complex for the role of the HMI, which was simply to provide a clear visual indicator of the car’s current state. We simplified the HMI logic so that it only reacts to two command values: <code>0x00</code> to indicate stop and <code>0x01</code> to indicate go. This not only made the code more concise and reliable but also aligned better with our standardized message structure and reduced the risk of display errors due to unexpected message content.</p>
+</li>
+</ol>
 <h2 id="communication-protocols-used"><strong>Communication Protocols Used</strong></h2>
 <ul>
 <li>I2C Communication → Used between the ESP32 and Color Sensor for real-time data exchange and control.  </li>
@@ -1032,7 +1023,7 @@
 <li>The HMI receives the status update and displays live feedback on the screen.</li>
 <li>The user can monitor how the robot is navigating based on sensor input and speed adjustments.</li>
 </ul>
-<h3 id="the-process-repeats-continuously_1">The Process Repeats Continuously</h3>
+<h3 id="the-process-repeats-continuously">The Process Repeats Continuously</h3>
 <ul>
 <li>The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.</li>
 </ul>
