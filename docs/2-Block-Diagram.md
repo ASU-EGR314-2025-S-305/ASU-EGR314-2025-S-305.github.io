@@ -91,15 +91,16 @@ sequenceDiagram
     participant User
     participant HMI as Agilan (ESP32 - HMI - SPI)
     participant David as David (ESP32 - Color Sensor - I2C)
-    participant Zack as Zack (PIC18 - Motor Driver - SPI)
     participant Andrew as Andrew (ESP32 - Wifi Connectivity - MQTT)
+    participant Zack as Zack (PIC18 - Motor Driver - SPI)
+
 
     User->>HMI: Start Line-Following Mode
     HMI->>David: Record Line Color Data (I2C)
-    David->>Zack: Send Movement Data
-    Zack->>Andrew: Update Robot Status
-    Andrew-->>HMI: Display Robot Status
-    HMI-->>User: Display Robot Path Progress
+    David->>Andrew: Send Color Data
+    Andrew->>Zack: Send Movement Command
+    Zack-->>HMI: Send Robot Status
+    HMI-->>User: Display Robot Progress
 ```
 
 ---
