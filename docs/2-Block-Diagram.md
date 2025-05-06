@@ -96,41 +96,52 @@ sequenceDiagram
 
 ## **Message Structure Diagram**
 
+### Sensor Sends Stop Command to MQTT
+- When the Sensor ESP32 detects red or blue, it sends a stop message over UART.
+- Message format:  
+  `[0x41 | Source: 0x01 (Sensor) | Destination: 0x04 (MQTT) | Data: 0x64 or 0x65 | 0x42]`
 
-### ESP32 Requests Sensor Data
-- The ESP32 sends an I2C request to the Color Sensor.
-- The request follows the format:  
-  `[0x41 | Source: ESP32 | Destination: Sensor | Read Color Command | End Byte: 0x42]`
+### MQTT Relays Command to Motor System
+- The MQTT ESP32 validates the message and enters a lockout period.
+- It sends a stop command to the Motor subsystem.
+- Message format:  
+  `[0x41 | Source: 0x04 (MQTT) | Destination: 0x05 (Motor) | Data: 0x00 | 0x42]`
 
-### Color Sensor Responds to ESP32
-- The Color Sensor reads the line position and sends the data back to the ESP32.
-- The response format:  
-  `[0x41 | Source: Sensor | Destination: ESP32 | Color Value | End Byte: 0x42]`
+### MQTT Sends Timed Go Command
+- After the stop period ends, the MQTT subsystem sends a go command.
+- Message format:  
+  `[0x41 | Source: 0x04 (MQTT) | Destination: 0x05 (Motor) | Data: 0x01 | 0x42]`
 
-### ESP32 Sends Line Data to PIC18 
-- Based on the sensor data, the ESP32 calculates the required motor speed and direction adjustments.
-- The ESP32 sends an I2C command to the Motor Driver with the new speed settings.
-- The message format:  
-  `[0x41 | Source: ESP32 | Destination: PIC18 | Speed Value | End Byte: 0x42]`
+### MQTT Rewrites Receiver for Loop Detection
+- When MQTT receives a valid message not intended for itself, it **modifies the receiver byte to 0x04** before forwarding.
+- This marks that the message has looped through the system once and allows MQTT to terminate it if seen again.
+- Original message:  
+  `[0x41 | Source: 0x03 | Destination: 0x05 | Data: X | 0x42]`  
+  Forwarded message:  
+  `[0x41 | Source: 0x03 | Destination: 0x04 | Data: X | 0x42]`
 
-### PIC18 gives Motor Driver Movement Command
-- The Motor Driver processes the command and adjusts the wheel speed.
-- The Motor Driver then sends a confirmation message back to the ESP32.
-- The confirmation format:  
-  `[0x41 | Source: PIC18 | Destination: Motor Driver | Speed Ack | End Byte: 0x42]`
+### HMI Displays State Based on UART
+- The HMI ESP32 receives messages from MQTT via UART and updates the OLED display.
+- Message format:  
+  `[0x41 | Source: 0x04 (MQTT) | Destination: 0x03 (HMI) | Data: 0x00 or 0x01 | 0x42]`
 
-### PIC18 Sends Status Update to HMI
-- The ESP32 sends real-time status updates to the HMI.
-- The HMI displays the current status (e.g., robot speed, direction, sensor readings).
-- The message format:  
-  `[0x41 | Source: PIC18 | Destination: HMI | Status Data | End Byte: 0x42]`
+### MQTT Publishes State to MQTT Broker
+- MQTT also publishes state updates to the broker for remote visualization and fallback usage.
+- Topics and values include:
+  - `car/state`: `"0"` (stop) or `"1"` (go)
+  - `counter/terminated`: Number of terminated messages
+  - `counter/redundant`: Number of filtered repeated messages
 
-### HMI Displays Robot Status to the User
-- The HMI receives the status update and displays live feedback on the screen.
-- The user can monitor how the robot is navigating based on sensor input and speed adjustments.
+### Sensor Fallback Uses MQTT to Receive Messages
+- If UART communication with the HMI fails, the Sensor switches to fallback mode and receives control messages from MQTT.
+- Fallback message example:  
+  `[0x41 | Source: 0x03 (HMI) | Destination: 0x01 (Sensor) | Data: 0x00 or 0x01 | 0x42]`
 
-### The Process Repeats Continuously
-- The ESP32 continuously requests and processes data from the sensors, motor, and HMI to keep the robot on track.
+### The System Loops Continuously
+- The Sensor continues monitoring for color.
+- MQTT coordinates message flow and filtering.
+- HMI reflects current movement status.
+
 
 ---
 
