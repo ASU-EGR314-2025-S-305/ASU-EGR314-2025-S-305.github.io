@@ -26,41 +26,60 @@ title: Reflection
 
 In a **Version 2.0** of our communication architecture, we would focus on improving **reliability, modularity, and scalability** of subsystem communication.
 
-### Improvements
+## Potential Future Extensions
 
-- **Structured Protocol Format**  
-  Use a consistent message structure like:  
-  `Start Byte | Sender | Receiver | Data | End Byte`  
-  This improves parsing, enables validation, and simplifies debugging.
+Many of the improvements listed below are already present within the group’s systems — including structured message protocols, modular code organization, and debugging support. The following suggestions reflect ways these existing features could be expanded, standardized across all subsystems, or enhanced for greater robustness in future iterations.
 
-- **Modular Codebase**  
-  Split the communication logic into:
-  - `comm_uart.py`: UART receive/parse functions
-  - `comm_logic.py`: High-level command handling
-  - `main.py`: Application loop  
-  This makes it easier to test, maintain, and expand the codebase.
+### Structured Protocol Format  
+The current system uses a consistent message structure (`Start | Sender | Receiver | Data | End`) for UART communication. This improves parsing, enables validation, and simplifies debugging.
 
-- **Enhanced Debugging**  
-  - Add verbose logs over UART or OLED (`"MSG RECEIVED"`, `"UNKNOWN CMD"`, etc.)
-  - Use debug LEDs to indicate message status or errors
-  - Include timestamps or counters in messages for tracking
+**Future extension:**  
+Formalize message versioning or message type fields to support a wider range of command formats and features.
 
-- **New Protocol Features**  
-  - ACK/NAK support for command confirmation
-  - Ping/heartbeat messages to verify active links
-  - Error codes for invalid or incomplete messages
+---
 
-- **System Reliability**  
-  - Implement watchdog timers to recover from software crashes
-  - Use interrupt-based UART for consistent message reception
-  - Add message queues or buffers to handle burst traffic
+### Modular Codebase  
+Several subsystems separate functionality into clear modules, such as UART parsing, message logic, and application control. This modular approach improves maintainability and scalability.
 
-- **Peripheral Expansion**  
-  - Add I2C or SPI sensors with structured message handlers
-  - Explore JSON-style messaging for human-readability if memory allows
+**Future extension:**  
+Standardize this structure across all boards to streamline development, testing, and future integration of new components.
 
-### Why These Changes?
+---
 
-These improvements would make the system more robust for classroom use, easier to debug and extend, and better suited to interact with additional components like distance sensors, displays, or future subsystems.
+### Enhanced Debugging  
+Debugging tools — such as verbose logs, debug LEDs, and OLED indicators — are already used to track system behavior and communication states.
+
+**Future extension:**  
+Incorporate timestamps, message counters, or structured debug outputs to make logs more informative and consistent.
+
+---
+
+### New Protocol Features  
+Message filtering, repeat suppression, invalid message handling, and heartbeat monitoring have already been implemented in parts of the system.
+
+**Future extension:**  
+Add ACK/NAK confirmation messages for critical commands, and define more structured error codes for invalid or incomplete messages.
+
+---
+
+### System Reliability  
+Timers and lockout mechanisms are in place to avoid repeated stop signals and ensure message handling stability.
+
+**Future extension:**  
+Adopt interrupt-based UART reception across all boards and use buffering or queuing strategies to improve responsiveness during high traffic.
+
+---
+
+### Peripheral Expansion  
+I2C communication is already implemented for the color sensor subsystem.
+
+**Future extension:**  
+Expand support for other sensors (e.g., SPI-based), and consider structured handlers for interpreting more complex sensor data.
+
+---
+
+## Why These Changes?
+
+These improvements would make the system more robust for future classroom projects, easier to debug and extend, and better suited for integration with additional subsystems such as distance sensing, autonomous navigation, or remote control modules.
 
 
