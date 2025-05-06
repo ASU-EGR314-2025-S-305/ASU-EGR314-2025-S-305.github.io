@@ -510,25 +510,67 @@
     📡Communication Architecture – Version 2.0 Reflection
   </a>
   
-    <nav class="md-nav" aria-label="📡Communication Architecture – Version 2.0 Reflection">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potential-future-extensions" class="md-nav__link">
+    Potential Future Extensions
+  </a>
+  
+    <nav class="md-nav" aria-label="Potential Future Extensions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#improvements" class="md-nav__link">
-    Improvements
+  <a href="#structured-protocol-format" class="md-nav__link">
+    Structured Protocol Format
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-these-changes" class="md-nav__link">
-    Why These Changes?
+  <a href="#modular-codebase" class="md-nav__link">
+    Modular Codebase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-debugging" class="md-nav__link">
+    Enhanced Debugging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-protocol-features" class="md-nav__link">
+    New Protocol Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-reliability" class="md-nav__link">
+    System Reliability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peripheral-expansion" class="md-nav__link">
+    Peripheral Expansion
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-these-changes" class="md-nav__link">
+    Why These Changes?
+  </a>
   
 </li>
       
@@ -583,25 +625,67 @@
     📡Communication Architecture – Version 2.0 Reflection
   </a>
   
-    <nav class="md-nav" aria-label="📡Communication Architecture – Version 2.0 Reflection">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#potential-future-extensions" class="md-nav__link">
+    Potential Future Extensions
+  </a>
+  
+    <nav class="md-nav" aria-label="Potential Future Extensions">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#improvements" class="md-nav__link">
-    Improvements
+  <a href="#structured-protocol-format" class="md-nav__link">
+    Structured Protocol Format
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-these-changes" class="md-nav__link">
-    Why These Changes?
+  <a href="#modular-codebase" class="md-nav__link">
+    Modular Codebase
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enhanced-debugging" class="md-nav__link">
+    Enhanced Debugging
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#new-protocol-features" class="md-nav__link">
+    New Protocol Features
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#system-reliability" class="md-nav__link">
+    System Reliability
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#peripheral-expansion" class="md-nav__link">
+    Peripheral Expansion
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#why-these-changes" class="md-nav__link">
+    Why These Changes?
+  </a>
   
 </li>
       
@@ -654,56 +738,40 @@
 </ul>
 <h2 id="communication-architecture-version-20-reflection">📡Communication Architecture – Version 2.0 Reflection</h2>
 <p>In a <strong>Version 2.0</strong> of our communication architecture, we would focus on improving <strong>reliability, modularity, and scalability</strong> of subsystem communication.</p>
-<h3 id="improvements">Improvements</h3>
-<ul>
-<li>
-<p><strong>Structured Protocol Format</strong><br />
-  Use a consistent message structure like:<br />
-<code>Start Byte | Sender | Receiver | Data | End Byte</code><br />
-  This improves parsing, enables validation, and simplifies debugging.</p>
-</li>
-<li>
-<p><strong>Modular Codebase</strong><br />
-  Split the communication logic into:</p>
-</li>
-<li><code>comm_uart.py</code>: UART receive/parse functions</li>
-<li><code>comm_logic.py</code>: High-level command handling</li>
-<li>
-<p><code>main.py</code>: Application loop<br />
-  This makes it easier to test, maintain, and expand the codebase.</p>
-</li>
-<li>
-<p><strong>Enhanced Debugging</strong>  </p>
-</li>
-<li>Add verbose logs over UART or OLED (<code>"MSG RECEIVED"</code>, <code>"UNKNOWN CMD"</code>, etc.)</li>
-<li>Use debug LEDs to indicate message status or errors</li>
-<li>
-<p>Include timestamps or counters in messages for tracking</p>
-</li>
-<li>
-<p><strong>New Protocol Features</strong>  </p>
-</li>
-<li>ACK/NAK support for command confirmation</li>
-<li>Ping/heartbeat messages to verify active links</li>
-<li>
-<p>Error codes for invalid or incomplete messages</p>
-</li>
-<li>
-<p><strong>System Reliability</strong>  </p>
-</li>
-<li>Implement watchdog timers to recover from software crashes</li>
-<li>Use interrupt-based UART for consistent message reception</li>
-<li>
-<p>Add message queues or buffers to handle burst traffic</p>
-</li>
-<li>
-<p><strong>Peripheral Expansion</strong>  </p>
-</li>
-<li>Add I2C or SPI sensors with structured message handlers</li>
-<li>Explore JSON-style messaging for human-readability if memory allows</li>
-</ul>
-<h3 id="why-these-changes">Why These Changes?</h3>
-<p>These improvements would make the system more robust for classroom use, easier to debug and extend, and better suited to interact with additional components like distance sensors, displays, or future subsystems.</p>
+<h2 id="potential-future-extensions">Potential Future Extensions</h2>
+<p>Many of the improvements listed below are already present within the group’s systems — including structured message protocols, modular code organization, and debugging support. The following suggestions reflect ways these existing features could be expanded, standardized across all subsystems, or enhanced for greater robustness in future iterations.</p>
+<h3 id="structured-protocol-format">Structured Protocol Format</h3>
+<p>The current system uses a consistent message structure (<code>Start | Sender | Receiver | Data | End</code>) for UART communication. This improves parsing, enables validation, and simplifies debugging.</p>
+<p><strong>Future extension:</strong><br />
+Formalize message versioning or message type fields to support a wider range of command formats and features.</p>
+<hr />
+<h3 id="modular-codebase">Modular Codebase</h3>
+<p>Several subsystems separate functionality into clear modules, such as UART parsing, message logic, and application control. This modular approach improves maintainability and scalability.</p>
+<p><strong>Future extension:</strong><br />
+Standardize this structure across all boards to streamline development, testing, and future integration of new components.</p>
+<hr />
+<h3 id="enhanced-debugging">Enhanced Debugging</h3>
+<p>Debugging tools — such as verbose logs, debug LEDs, and OLED indicators — are already used to track system behavior and communication states.</p>
+<p><strong>Future extension:</strong><br />
+Incorporate timestamps, message counters, or structured debug outputs to make logs more informative and consistent.</p>
+<hr />
+<h3 id="new-protocol-features">New Protocol Features</h3>
+<p>Message filtering, repeat suppression, invalid message handling, and heartbeat monitoring have already been implemented in parts of the system.</p>
+<p><strong>Future extension:</strong><br />
+Add ACK/NAK confirmation messages for critical commands, and define more structured error codes for invalid or incomplete messages.</p>
+<hr />
+<h3 id="system-reliability">System Reliability</h3>
+<p>Timers and lockout mechanisms are in place to avoid repeated stop signals and ensure message handling stability.</p>
+<p><strong>Future extension:</strong><br />
+Adopt interrupt-based UART reception across all boards and use buffering or queuing strategies to improve responsiveness during high traffic.</p>
+<hr />
+<h3 id="peripheral-expansion">Peripheral Expansion</h3>
+<p>I2C communication is already implemented for the color sensor subsystem.</p>
+<p><strong>Future extension:</strong><br />
+Expand support for other sensors (e.g., SPI-based), and consider structured handlers for interpreting more complex sensor data.</p>
+<hr />
+<h2 id="why-these-changes">Why These Changes?</h2>
+<p>These improvements would make the system more robust for future classroom projects, easier to debug and extend, and better suited for integration with additional subsystems such as distance sensing, autonomous navigation, or remote control modules.</p>
 
 
 
