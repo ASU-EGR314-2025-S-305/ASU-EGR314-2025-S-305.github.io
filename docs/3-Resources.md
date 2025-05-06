@@ -35,7 +35,7 @@ Figure 2.2: All of our boards connected creating communication through all subsy
 
 
 
-   ## **Indvidual Codes for all Subsystems**
+## **Indvidual Codes for all Subsystems**
 
 
 ## **MQTT**
