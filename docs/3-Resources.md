@@ -44,7 +44,7 @@ Figure 2.2: All of our boards connected creating communication through all subsy
 ## **Color Sensor**
 
 ## **HMI**
-- [Agilan's site](images/AKcode.pdf)
+- [Agilan's Code](images/AKcode.pdf)
 
 ## **Motor Driver**
 
