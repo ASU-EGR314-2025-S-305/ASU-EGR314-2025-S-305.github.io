@@ -8,53 +8,64 @@ title: Block Diagram, Process Diagram, and Message Structure
 
 [Block Diagram PDF](images/EGR314TeamBlockDiagram.drawio.pdf)
 
-## **Sequence Diagram**
+## Final Communication Sequence
+
+### 1. User Powers On the System
+- Each microcontroller (Sensor, HMI, Motor, MQTT) powers on individually.  
+- Subsystems begin listening on UART and prepare for message exchange.
+
+### 2. Sensor Subsystem Monitors for Color
+- The Sensor ESP32 continuously polls the I2C color sensor.  
+- When it detects red or blue, it determines a stop event has occurred.  
+- It sends a 5-byte stop message (`0x64` or `0x65`) over UART.
+
+### 3. UART Message Reaches the MQTT Subsystem
+- The MQTT ESP32 receives the message, verifies its structure, and detects it as a valid stop trigger.  
+- MQTT logs the event and initiates a lockout period to prevent redundant triggers.  
+- MQTT sends a standardized stop command (`0x00`) over UART to the motor system and publishes `car/state = 0` to MQTT.
+
+### 4. MQTT Triggers a Timed Restart
+- After a 5-second stop period, the MQTT system sends a go message (`0x01`) over UART.  
+- It also publishes `car/state = 1` to the MQTT broker.  
+- This ensures coordinated restart of movement.
+
+### 5. HMI Receives and Displays Movement Status
+- The HMI ESP32 listens over UART for stop (`0x00`) or go (`0x01`) messages.  
+- It updates its OLED display with a large X (stop) or upward arrow (go).  
+- It also subscribes to `car/state` over MQTT as a fallback if UART fails.
+
+### 6. Sensor Fallback if UART to HMI Fails
+- If no UART messages are received from the HMI after 15 seconds, the Sensor board enables MQTT fallback mode.  
+- It listens for relayed messages from the HMI over MQTT and continues normal operation.
+
+### 7. MQTT Logs System Behavior
+- The MQTT system tracks terminated and filtered messages.  
+- It publishes data to the broker for analysis (e.g., `counter/terminated`, `counter/redundant`).  
+- A Python script running on the local computer visualizes this in real time via Matplotlib.
 
 
-### 1. User Starts the Robot
-- The user interacts with the HMI to power on robot out of sleep, and enable line-following mode.
-- The HMI sends a command to the ESP32 to activate the system.
+### Message Structure and Design Process
 
-### 2. ESP32 Requests Color Sensor Data
-- The ESP32 sends an I2C request to the Color Sensor to read the line position.
+Our team designed a 5-byte UART message structure consisting of a Start Byte, Sender ID, Receiver ID, Data Byte, and End Byte. This provided a consistent framework for message formatting and error checking across subsystems. The original intent was to use the Sender and Receiver IDs for targeted delivery and basic validation, but as our system evolved, we began to use these fields in more flexible and functional ways.
 
-### 3. Color Sensor Sends Data to ESP32
-- The Color Sensor detects the line position and records position data (e.g., whether the robot is:
-    - Centered
-    - Drifting Left
-    - Drifting Right
-- The sensor sends this data back to the ESP32 over I2C.
+Most notably, we implemented a system-wide method of detecting when a message had already traveled around the entire UART chain. When a message was first received by the MQTT system, we altered its Receiver byte from its original value to `0x04`. Since all messages pass through each board in the UART loop, when a board later received a message already tagged with `Receiver = 0x04`, we could safely assume it had completed one full trip through the network and could now be terminated. This mechanism provided a simple but robust way to eliminate redundant or looping messages without the need for message tracking or UUIDs, simplifying the logic for all subsystems.
 
-### 4. ESP32 Processes and Sends Data to PIC
-- Based on the Color Sensor readings, the ESP32 determines the required motor adjustments:
-    - If centered, maintain speed.
-    - If drifting left, increase right motor speed and reduce left motor speed.
-    - If drifting right, increase left motor speed and reduce right motor speed.
-- The ESP32 sends the position command to the PIC with the updated speed values.
+### Top 5 Software Design Changes
 
-### 5. PIC Sends Command to Motor Drivers
-- The PIC recieves the command to move from the ESP32 and speaks to the motor drivers over SPI
+1. **MQTT Backup System**  
+   Initially, we designed the system to rely solely on UART for communication. However, as we progressed, we implemented a robust MQTT backup that activates if a UART timeout occurs on the Sensor subsystem. When UART fails, the Sensor subscribes to the HMI's MQTT topic and resumes communication via MQTT instead of UART. This fallback system ensured our communication architecture remained functional and resilient even during partial subsystem failures.
 
-### 6. Motor Driver Executes Speed Adjustments
-- The Motor Driver processes the speed and direction commands and adjusts the motors accordingly.  
-- The Motor Driver sends a confirmation message back to the PIC, indicating that the motor speed update was applied.
+2. **Repeat Message Filtering + Graph Output**  
+   We added logic to filter repeated stop messages at the MQTT system level, preventing the car from being retriggered by redundant sensor input. A 2-second lockout followed each valid stop event. We also tracked the number of filtered messages and exposed that information through MQTT topics so that a Python-based local graphing utility could visualize system behavior in real time. This gave us a powerful debugging and feedback mechanism for observing system stability and message traffic.
 
-### 7. PIC Confirms Movement and Sends Movement Data to Wifi
-- The PIC recieves mesage that motor driver has moved
-- The PIC sends speed and movement data to Wifi ESP32 through UART to be recorded
+3. **Receiver ID Modification for Message Termination**  
+   We added a mechanism in the MQTT subsystem to change the Receiver ID of a message to `0x04` once it had been processed. When any subsystem later receives a message with `Receiver = 0x04`, it knows that message has already traveled through the system once and terminates it instead of forwarding. This design change allowed us to eliminate message loops without requiring per-board message history tracking and helped the MQTT system act as a central filter without additional memory overhead.
 
-### 8. ESP32 Updates the HMI for User Feedback
-- The ESP32 sends real-time updates to the HMI (OLED Display), showing:
-    - Robot movement status (e.g., "Turning Left", "Going Straight").
-    - Sensor readings (e.g., "Line detected at center", "Line shifted left").
-    - Motor speed adjustments in real-time.
+4. **Message Simplification**  
+   Originally, we used separate messages to indicate each type of stop or color trigger. We simplified this into a streamlined structure where the sensor sends either `0x64` or `0x65` for red or blue, both of which are treated identically as stop commands. The MQTT system receives this, then sends a `0x00` message down the line to stop the car, waits for a timer to expire, and sends a `0x01` to resume movement. This design simplified downstream logic and centralized stop/go timing into the MQTT system, improving consistency and reliability.
 
-### 9. User Monitors the Robot's Status on the HMI
-- The HMI displays live feedback about the robot’s navigation and behavior.
-- The user can see real-time updates on how the robot is following the path.
-
-### The Process Repeats Continuously
-- The system loops from Step 2 to Step 9, ensuring the robot dynamically adjusts its speed and direction in real-time.
+5. **HMI Simplification**  
+   Our original plan for the HMI system involved displaying detailed information based on incoming UART messages, such as color, sender ID, or command type. However, we found this to be unnecessarily complex for the role of the HMI, which was simply to provide a clear visual indicator of the car’s current state. We simplified the HMI logic so that it only reacts to two command values: `0x00` to indicate stop and `0x01` to indicate go. This not only made the code more concise and reliable but also aligned better with our standardized message structure and reduced the risk of display errors due to unexpected message content.
 
 
 ## **Communication Protocols Used**
