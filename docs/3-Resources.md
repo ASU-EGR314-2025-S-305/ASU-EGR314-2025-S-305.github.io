@@ -47,7 +47,9 @@ Figure 2.2: All of our boards connected creating communication through all subsy
 - [Agilan's Code](images/AKcode.pdf)
 
 ## **Motor Driver**
+- [Zachary's Code](https://zrromero.github.io/resources/)
 
 ## **SolidWorks Files**
+- [Robot Model Files](images/EGR314CADModels.zip)
 - [CAD boardholder PDF](images/boardhol3.pdf)
-   
+- [CAD Body PDF](images/boat.pdf)   
