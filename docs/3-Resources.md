@@ -42,6 +42,7 @@ Figure 2.2: All of our boards connected creating communication through all subsy
 - [Andrew's Code](https://arushton96.github.io/Code/)
 
 ## **Color Sensor**
+- [David's Code](https://daviddiaz01.github.io/API/)
 
 ## **HMI**
 - [Agilan's Code](images/AKcode.pdf)
